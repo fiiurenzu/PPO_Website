@@ -1,0 +1,183 @@
+/**
+ * = REGLAGES TYPO
+ * 
+ * ========================================================================= */
+
+/**
+   * = 01 - REGLAGES BASE
+   * ------------------------------------------------------------------------- */
+html {
+  font-size: 100%; // 16px
+}
+
+body {
+  font-size: $type-basis;
+  font-family: "Roboto", Arial, sans-serif;
+  /*font-family: helvetica, arial, sans-serif;*/
+  ::selection {
+    color: $second;
+    background: $first;
+  }
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: $second;
+    background: $first;
+  }
+  font-weight: 400;
+}
+h1 {
+  font-size: $type-basis;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+h4 {
+  font-weight: 500;
+}
+
+footer {
+  font-size: $level-3;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  // Help prevent overflow of long words/names/URLs
+  overflow-wrap: break-word;
+
+  // Optional, not supported for all languages
+  hyphens: auto;
+}
+
+.a-index_heading__item {
+  font-size: $type-basis;
+}
+
+/**
+  * = 02 - INFO BULLES
+  *-------------------------------------------------*/
+
+.infoBulle:hover:after,
+.infoBulle:focus:after {
+  font-size: $level-2;
+}
+
+[aria-label]:hover:before,
+[aria-label]:focus:before {
+  font-size: $level-2;
+}
+
+/**
+   * = 03 - TYPO HOME
+   * ------------------------------------------------------------------------- */
+/* = 03.1 - BLOCK TEXTE */
+.a-infos__text_item {
+  line-height: $line-height-2; //Ajouter line height sur info texte pour ne pas changer le padding des index
+}
+
+/* = 03.2 - PANEL DROPDOWN */
+button {
+  font-size: $type-basis;
+}
+
+/* = 03.3 - PANEL DROPDOWN */
+.panel {
+  font-size: $level-3;
+  line-height: $type-basis;
+  .title-service {
+    text-transform: uppercase;
+  }
+}
+/* = FONT INFOS AVAILABLE */
+.infoAvailable {
+  font-size: $level-3;
+  line-height: $type-basis;
+}
+
+/* = 03.3 - COVER OVERLAY */
+//- typographie des element en hover sur la cover
+//- elements principaux
+.overlay__wrapper {
+  font-size: clamp(0.833rem, 2vw, 1rem);
+}
+
+//- elemtns informations
+.container_bottom,
+.index {
+  font-size: $level-3;
+}
+
+/**
+   * = 04 - TYPO PROJECT
+   * ------------------------------------------------------------------------- */
+
+/* = LIST SERVICE EXTERNAL LINK & COPYRIGHT */
+#list_services_still,
+#list_services_justify,
+.o-parent__container {
+  font-size: $level-3;
+}
+.external_links {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* = BLOCK TEXT  */
+.m-text_project__wrapper {
+  font-size: $type-basis;
+  line-height: $line-height-2;
+}
+/* = PARAGRAPH HYPPHENS */
+/* = HOME PAGE ACCORDION TITRE SERVICE */
+.title-service {
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
+  hyphens: none;
+  -webkit-hyphenate-limit-zone: 8%;
+  -ms-hyphenate-limit-zone: 8%;
+  hyphenate-limit-zone: 8%;
+}
+.m-text_project__wrapper > p {
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 3;
+  -webkit-hyphenate-limit-chars: 6 3 3;
+  -webkit-hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-zone: 8%;
+  -moz-hyphens: auto;
+  -moz-hyphenate-limit-chars: 6 3 3;
+  -moz-hyphenate-limit-lines: 2;
+  -moz-hyphenate-limit-last: always;
+  -moz-hyphenate-limit-zone: 8%;
+  -ms-hyphens: auto;
+  -ms-hyphenate-limit-chars: 6 3 3;
+  -ms-hyphenate-limit-lines: 2;
+  -ms-hyphenate-limit-last: always;
+  -ms-hyphenate-limit-zone: 8%;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-last: always;
+  hyphenate-limit-zone: 8%;
+}
+#list_services_justify {
+  font-style: 500;
+}
+
+#exhibition {
+  font-style: italic;
+}
+
+.a-infos__text_item {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}

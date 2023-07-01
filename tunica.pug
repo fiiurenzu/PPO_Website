@@ -1,0 +1,221 @@
+//- IMAGE DETAILS
+-let imageDetail01 = "_tunica extended fantasy : cover"
+-let imageDetail02 = "_tunica extended fantasy : two-page spread 01"
+-let imageDetail03 = "_tunica extended fantasy : two-page spread 02"
+-let imageDetail04 = "_typeface overview"
+
+//- PROJECT INFORMATION
+-let clientName = "Tunica Magazine"
+-let catName = "Fashion & Art Publication"
+-let labelProject = "TM-FAP-19"
+-let localisationProject = "New-York, USA 🇺🇸"
+-let dateProject = "2019"
+
+//- SERVICES
+-let service01 = "Typeface design,"
+-let service02 = "Design & Layout,"
+-let service03 = "Design development."
+
+//- EXTERNAL LINKS
+-let link01 = "https://tunicastudio.com/product/tunica-magazine-issue-no-7/"
+-let link02 = "https://www.itsnicethat.com/articles/tunica-issue-seven-publicationtunica-0280619"
+
+//- LINK DETAILS 
+-let linkDetail01 = "TUNICA Magazine Issue No.7"
+-let linkDetail02 = "It's Nice That"
+
+//- CREDITS
+-let credit01 = "Copyright — PPOffice 2019."
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Extended Fantasy : Issue #7" 
+-let contentService11 = "Printing Process : Offset (CMYK)"
+-let contentService12 = "Size : 228×304 mm | 1000 copies."
+
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/eotna.html"
+-let nextProject = "/evangiles.html"
+
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- IMG tunica 01
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail01}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/tunica/tunica-01-1152.webp 1152w,\
+                                /public/img/tunica/tunica-01-1440.webp 1440w,\
+                                /public/img/tunica/tunica-01-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/tunica/tunica-01-1152.jpg 1152w,\
+                                /public/img/tunica/tunica-01-1440.jpg 1440w,\
+                                /public/img/tunica/tunica-01-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/tunica/tunica-01-1920.jpg", alt=imageDetail01)
+                    //- IMG - tunica 02
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/tunica/tunica-02-1152.webp 1152w,\
+                                /public/img/tunica/tunica-02-1440.webp 1440w,\
+                                /public/img/tunica/tunica-02-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/tunica/tunica-02-1152.jpg 1152w,\
+                                /public/img/tunica/tunica-02-1440.jpg 1440w,\
+                                /public/img/tunica/tunica-02-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/tunica/tunica-02-1920.jpg", alt=imageDetail02)
+                    //- IMG - tunica 03
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/tunica/tunica-03-1152.webp 1152w,\
+                                /public/img/tunica/tunica-03-1440.webp 1440w,\
+                                /public/img/tunica/tunica-03-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/tunica/tunica-03-1152.jpg 1152w,\
+                                /public/img/tunica/tunica-03-1440.jpg 1440w,\
+                                /public/img/tunica/tunica-03-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/tunica/tunica-03-1920.jpg", alt=imageDetail03) 
+                    //- IMG - tunica 04
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/tunica/tunica-04-1152.webp 1152w,\
+                                /public/img/tunica/tunica-04-1440.webp 1440w,\
+                                /public/img/tunica/tunica-04-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/tunica/tunica-04-1152.jpg 1152w,\
+                                /public/img/tunica/tunica-04-1440.jpg 1440w,\
+                                /public/img/tunica/tunica-04-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/tunica/tunica-04-1920.jpg", alt=imageDetail04)
+
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+                                span #{service02}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__itemVisual TUNICA magazine is a receptacle of international culture based in New York City, stemming from an urge to assemble a publication that curates talents, combines disciplines and shares new ideas and styles. TUNICA contributors represent a wide range of international and cutting-edge artistic disciplines.
+                            p.a-text_project__item  We were asked by the editorial committee to develop the typographic direction, graphic design and layout of one of the section in the magazine, featuring artworks by photographer Raphaël Lugassy & CGI artists Obby & Japary                   
+
+                        //- External Website
+                        .scrollmenu.scroll_horizontal
+                            #list_services_still
+                                span External links : 
+                            #list_services_justify.external_links
+                                a.highlight__link(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                                a.highlight__link(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+
+                        //- Copyright      
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService11}
+                                        p.content-service #{contentService12}
+                    
+                    //- Next previous project
+                    include includes/next-previous-container
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

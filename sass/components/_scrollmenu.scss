@@ -1,0 +1,58 @@
+/* = LIENS EXTERNES ET SERVICES */
+.scrollmenu {
+  scrollbar-width: none; // DISABLE SCROLLBAR FIREFOX
+  -ms-overflow-style: none; // OVERFLOW POUR IE & EDGE
+  padding-top: $pad-T-B;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.scroll_horizontal {
+  overflow-x: scroll; // CACHE LE TEXTE EN OVERFLOW
+  white-space: nowrap; // UTILISE POUR WRAP TXT EN UNE SEULE LIGNE
+  display: flex;
+  flex-direction: row;
+}
+#list_services_justify {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  @include media("<=tablet") {
+    :nth-child(1) {
+      padding-left: $pad-L-R;
+    }
+  }
+
+  @include media(">=desktop") {
+    width: 100%;
+    :nth-child(1) {
+      padding-left: none;
+    }
+  }
+}
+
+#list_services_justify > span {
+  @include media("<=tablet") {
+    padding-right: $pad-L-R;
+  }
+}
+
+.scrollmenu .margin-right {
+  display: inline;
+  margin-right: $pad-L-R;
+}
+
+#list_services {
+  padding-bottom: $pad-T-B;
+}
+#external_links {
+  padding-top: $pad-T-B;
+}
+
+// padding right sur les liens externes
+.margin-right {
+  @include media("<=tablet") {
+    margin-right: $pad-L-R;
+  }
+}

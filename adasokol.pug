@@ -1,0 +1,270 @@
+//- IMAGE DETAILS
+-let videoDetail01 = "_malleable identity : digital campaign"
+-let imageDetail01 = "_business card"
+-let videoDetail02 = "_design system"
+-let imageDetail02 = "_business card"
+-let imageDetail03 = "_3d logotype"
+-let imageDetail04 = "_design & layout : conference @ kyoorius design festival"
+
+
+//- PROJECT INFORMATION
+-let clientName = "Ada Sokół"
+-let catName = "Personal Brand"
+-let labelProject = "AS-PBR-19"
+-let localisationProject = "Paris, FR 🇫🇷"
+-let dateProject = "2019"
+
+//- SERVICES
+-let service01 = "Art direction,"
+-let service02 = "Brand identity,"
+-let service03 = "Consulting."
+
+//- EXTERNAL LINKS
+-let link01 = "https://adasokol.com/"
+-let link02 = "https://imprimeriedumarais.com/"
+
+//- LINK DETAILS 
+-let linkDetail01 = "Ada Sokół"
+-let linkDetail02 = "Imprimerie du Marais"
+
+//- CREDITS
+-let credit01 = "Copyright — PPOffice 2019 — 3D Visuals & models : Ada Sokół."
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Brand design & logotype" 
+-let contentService11 = "Mixed media."
+//- DETAIL02
+-let titleService02 = "Business card" 
+-let contentService21 = "Printing Process : Silkscreen (White) on Iridescent side / Silkscreen (Black) on white side"
+-let contentService22 = "Printed at : Imprimerie du marais,"
+-let contentService23 = "Size : 85×55mm | 600 copies."
+//- DETAIL03
+-let titleService03 = "Starfish Animation" 
+-let contentService31 = "Digital Campaign"
+-let contentService32 = "Concept & Art direction : In collaboration with Ada Sokol 3D & animation : Ada Sokol,"
+-let contentService33 = "Display on conference screen at : Us By Night, Antwerp, BE."
+//- DETAIL04
+-let titleService04 = "Corporate design system" 
+-let contentService41 = "Display on conference screen at : Us By Night, Antwerp, BE & Kyoorius Design Festival, Goa, India."
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/2h34.html"
+-let nextProject = "/eotna.html"
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- video - AS 01
+                    section.m-image__wrapper
+                        span.a-image__description__item #{videoDetail01}
+                        video(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
+                            source(src="/public/img/ada/ada-video.mp4" type="video/mp4")
+                            source(src="/public/img/ada/ada-video.webm" type="video/webm")
+                            p Animation Malleable Identity
+                    //- IMG AS 01
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail01}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/ada/ada-02-1152.webp 1152w,\
+                                /public/img/ada/ada-02-1440.webp 1440w,\
+                                /public/img/ada/ada-02-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/ada/ada-02-1152.jpg 1152w,\
+                                /public/img/ada/ada-02-1440.jpg 1440w,\
+                                /public/img/ada/ada-02-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/ada/ada-02-1920.jpg", alt=imageDetail01)
+                    //- video - AS 02
+                    section.m-image__wrapper
+                        span.a-image__description__item #{videoDetail02}
+                        video(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
+                            source(src="/public/img/ada/ada-video-02.mp4" type="video/mp4")
+                            source(src="/public/img/ada/ada-video-02.webm" type="video/webm")
+                            p Design system
+                    //- IMG - AS 02
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/ada/ada-05-1152.webp 1152w,\
+                                /public/img/ada/ada-05-1440.webp 1440w,\
+                                /public/img/ada/ada-05-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/ada/ada-05-1152.jpg 1152w,\
+                                /public/img/ada/ada-05-1440.jpg 1440w,\
+                                /public/img/ada/ada-05-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/ada/ada-05-1920.jpg", alt=imageDetail02)
+                    //- IMG - AS 03
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/ada/ada-06-1152.webp 1152w,\
+                                /public/img/ada/ada-06-1440.webp 1440w,\
+                                /public/img/ada/ada-06-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/ada/ada-06-1152.jpg 1152w,\
+                                /public/img/ada/ada-06-1440.jpg 1440w,\
+                                /public/img/ada/ada-06-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/ada/ada-06-1920.jpg", alt=imageDetail03) 
+                    //- IMG - AS 04
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/ada/ada-04-1152.webp 1152w,\
+                                /public/img/ada/ada-04-1440.webp 1440w,\
+                                /public/img/ada/ada-04-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/ada/ada-04-1152.jpg 1152w,\
+                                /public/img/2h34/ada/ada-04-1440.jpg 1440w,\
+                                /public/img/2h34/ada/ada-04-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/ada/ada-04-1920.jpg", alt=imageDetail04)
+
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+                                span #{service02}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__itemVisual We’ve been approached by 3D artist Ada Sokół with the challenge of designing her eponym brand identity. The project targeted a three-month turnaround period in order to be ready for Ada’s presentation stage — at UsByNight Festival, Antwerp — and the launch of numerous personal projects. Iridescent materials and malleable forms became our premier choice for its whimsical and abstract texture that refers to Ada’s realm : organic, rhythmic, smooth & sensual, impressionnable & bright.
+                            p.a-text_project__item  During this collaboration, the studio assisted Ada opening up new horizons. As she was eager to diversify her activity, we undertook together defining her new needs and values as an artist next to her designer's work. With the launch of Malleable Identity, we elaborated a more challenging, dynamic and personal practice approach, leading to self-initiated projects as a new area of work. During this process, she launched her first jewelry collection, acquired new skills in 3D through the animations we art-directed together and released her branded Silk scarf, among other achivements.                   
+
+                        //- External Website
+                        .scrollmenu.scroll_horizontal
+                            #list_services_still
+                                span External links : 
+                            #list_services_justify.external_links
+                                a.highlight__link(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                                a.highlight__link(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+                                
+                        //- Copyright      
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService11}
+                                        p.content-service #{contentService12}
+                                //- Service 02
+                                ul.service
+                                    li.number-service 02
+                                    li.infos-service
+                                        h4.title-service #{titleService02}
+                                        p.content-service #{contentService21}
+                                        p.content-service #{contentService22}
+                                        p.content-service #{contentService23}
+                                //- Service 02
+                                ul.service
+                                    li.number-service 03
+                                    li.infos-service
+                                        h4.title-service #{titleService03}
+                                        p.content-service #{contentService31}
+                                        p.content-service #{contentService32}
+                                        p.content-service #{contentService33}
+                                //- Service 04
+                                ul.service
+                                    li.number-service 04
+                                    li.infos-service
+                                        h4.title-service #{titleService04}
+                                        p.content-service #{contentService41}
+                    
+                    //- Next previous project
+                    include includes/next-previous-container
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

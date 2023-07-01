@@ -1,0 +1,62 @@
+/**
+ * = NAVBAR 
+ *
+ * 01 - NAVBAR
+ * 02 - CTA RETURN HOME
+ * 
+ * ========================================================================= */
+
+/**
+ * = 01 - NAVBAR
+ * ------------------------------------------------------------------------- */
+
+.o-navbar__container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $second;
+  padding-top: $pad-T-B;
+  // decalage de 5px en top
+  //cache blanc pour masquer le passage du contenu en dessous
+  z-index: 9999;
+  @include media(">=desktop") {
+    position: relative;
+  }
+}
+
+.m-navbar__wrapper {
+  border-top: $border;
+  border-bottom: $border;
+  //height: 28.5px;
+  display: grid;
+  grid-template-columns: $col 1fr;
+
+  @include media(">=desktop") {
+    grid-template-columns: $col 1fr 50%;
+  }
+
+  .a-navbar__item {
+    padding: $pad-T-B $pad-L-R;
+  }
+}
+
+#name_panamaPapersOffice {
+  border-left: $border;
+}
+
+/**
+ * = 02 - CTA RETURN HOME
+ * ------------------------------------------------------------------------- */
+._slideHover {
+  @include button-slide-right($speed: 200ms); //ETAT DU SLIDE AVT HOVER
+  @include media("<=tablet") {
+    &:active {
+      @include button-slide-right--hover; // ETAT PENDANT HOVER;
+    }
+  }
+  @include media(">tablet") {
+    &:hover {
+      @include button-slide-right--hover; // ETAT PENDANT HOVER
+    }
+  }
+}

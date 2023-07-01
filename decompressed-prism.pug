@@ -1,0 +1,185 @@
+//- IMAGE DETAILS
+-let imageDetail01 = "_video announcement"
+-let imageDetail02 = "_interactive experience : desktop version 1"
+-let imageDetail03 = "_poster series : printed campaign"
+-let imageDetail04 = "_interactive experience : desktop version 2"
+-let imageDetail05 = "_interactive experience : desktop version 3"
+-let imageDetail06 = "_landing page : mobile version"
+
+//- PROJECT INFORMATION
+-let clientName = "Salvatore Vitale & MBAL"
+-let catName = "Interactive Experience"
+-let labelProject = "DP-INEX-22"
+-let localisationProject = "Le Locle, Switzerland"
+-let countryFlag = "🇨🇭"
+-let dateProject = "2022"
+
+//- SERVICES
+-let service01 = "Digital creative direction,"
+-let service02 = "Art direction,"
+-let service03 = "Web design & programming,"
+-let service04 = "Project management"
+
+//- EXTERNAL LINKS
+-let link01 = "https://www.mbal.ch/"
+-let link02 = "https://salvatore-vitale.com/"
+-let linkDp = "https://www.decompressed-prism.space/introduction"
+//- LINK DETAILS 
+-let linkDetail01 = "MBAL"
+-let linkDetail02 = "Salvatore Vitale"
+-let linkDetail03 = "Decompressed Prism : Online experience"
+
+//- CREDITS
+-let credit01 = "Copyright — PPOffice 2022"
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Decompressed prism : ORBIT_E" 
+-let contentService011 = "Interactive experience"
+-let contentService012 = "Dimensions : Responsive : Mobile + Pad + Desktop"
+
+//- DETAIL02
+-let titleService02 = "Video Annoucement" 
+-let contentService021 = "Duration : 1 min 06" 
+-let contentService022 = "Dimensions : 1920×1080 px" 
+//- DETAIL03
+-let titleService03 = "POSTER CAMPAIGN" 
+-let contentService031 = "Printing Process : Digital Printing" 
+-let contentService032 = "Dimensions : F4 (89,5×128 cm)  | 4 copies each" 
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="espace-loisir-culture.html"
+-let nextProject = "/silence-is-sexy.html"
+
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+            .m-pageSplit_projectLeft__wrapper
+                //- Decompressed Prism teaser
+                section.m-image__wrapper.video-margin
+                    span.a-image__description__item _video : teaser
+                    video.iframe(playsinline preload="auto" autoplay muted loop="1")
+                        source(src="/public/img/decompressed/decompressed-teaser.mp4" type="video/mp4")
+                //-DP vimeo boarding
+                section.m-image__wrapper.video-margin
+                    iframe.iframe(src="https://player.vimeo.com/video/757482435?h=59e00c4ed3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
+                    script(src="https://player.vimeo.com/api/player.js")
+                //-DP vimeo autopilot
+                section.m-image__wrapper.video-margin
+                    iframe.iframe(src="https://player.vimeo.com/video/757214732?h=4aa2d3e65d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
+                    script(src="https://player.vimeo.com/api/player.js")
+
+                //-DP vimeo autopilot
+                section.m-image__wrapper.video-margin
+                    iframe.iframe(src="https://player.vimeo.com/video/757482628?h=098256aa7c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
+                    script(src="https://player.vimeo.com/api/player.js")
+
+                //- Decompressed Prism poster motion
+                section.m-image__wrapper.video-margin
+                    span.a-image__description__item _motion : poster 
+                    video.ratio2(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
+                        source(src="/public/img/decompressed/decompressed-poster-motion.mp4" type="video/mp4")
+                        
+                //- footer mobile
+                include includes/footer-mobile
+
+            //- Container Right 
+            div.m-pageSplit_projectRight__wrapper
+                //- Information : client title area description
+                //- Client
+                section.m-container_grid_client
+                    div.a-project_info__item Client.
+                    h1.a-project_info__item #{clientName}
+                    a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                //- Title projet
+                section.m-container_grid_description#returnTop
+                    div.a-project_info__item Descr.
+                    div.a-project_info__item #{catName}
+                    div.a-project_info__item Area.
+                    div.a-project_info__item #{localisationProject}
+                        span#countryFlagEmoji #{countryFlag}
+
+                //- Title projet
+                section.m-container_grid_label
+                    div.a-project_info__item Label.
+                    div.a-project_info__item #{labelProject}
+
+                
+                //- Container Project
+                //- Textes projets
+                section.m-text_project__container
+                    //- List Services
+                    .scrollmenu.scroll_horizontal#list_services
+                        #list_services_still 
+                            span Service(s) : 
+                        ul#list_services_justify
+                            span #{service01}
+                            span #{service02}
+                            span #{service03}
+                            span #{service04}
+
+                    //- TEXTE CONTENU\
+                    .m-text_project__wrapper
+                        p.a-text_project__itemVisual Artist & director Salvatore Vitale reached the studio to create an interactive and online experience related to his latest movie <span id="exhibition">Decompressed Prism</span>. Among other assignments, the studio was asked to develop a new narrative for the film's web implementation, to define interactive experiences and design graphical interfaces that would match his prior production and strengthen the reflection and reach of his existing work.
+                        p.a-text_project__item  Hosted by ORBIT_E - the digital exhibition space that the MBAL (Musée des Beaux-Arts Le Locle, CH) launched in 2022 - we created, all together, an original and interactive work that echoes the initial physical installation presented in the Palazzo Santa Margherita in Milan. The experience takes the form of a non-linear narrative situated at the crossroads of philosophy and technology, in which we have endeavoured to fragment and then reassemble the initial storyline into several chapters. Conceived as an experience for the visitor, the work evolves in a playful space and touches on subjects of reflection important to the artist, such as conscientization, empathy, social realism, space and body.  Divided into four parts, each offering in a distinct digital space, a specific theme and an interactive experience of its own, the experience combines fictional and documentary elements, video archives, text, sound designs and real data.
+                        p.a-text_project__item The whole experience is based on the design of a virtual space that challenges the visitor, allowing freedom, but at the same time mimicking the mechanisms proper of digital tracking and monitoring. Access to content is granted only by accepting to share personal information (e.g. location). The user interface shows and records every single action taken while navigating. Users can download the details of each session.
+                        p.a-text_project__item "<span id="exposition_title">Decompressed Prism</span> reveals the paradoxes behind the systemic logic of ubiquitous surveillance through automated security tools. Exploring different uses of control technologies in Poland, Slovakia, Switzerland and Italy, the artist questions how these technologies shape our relationship to the world and to ourselves as human beings. Indeed, Salvatore Vitale explores the notion of the body evolving between digitalisation and reality, and the transformation of the latter into a product controlled by technology. Drawing on contemporary philosophical and sociological texts, the artist imagines a different reality in which the visitor is invited to question the possibility of counter-narratives. The work also demonstrates the disturbing normalisation of security and rhizomatic surveillance, which should rather give rise to a sense of concern about its impact on human behaviour." Curation & texts by Nathalie Herschdorfer & Séverine Cattin.
+
+                    //- External Website
+                    .scrollmenu.scroll_horizontal
+                        #list_services_still
+                            span External links : 
+                        #list_services_justify.external_links
+                            a.margin-right.highlight__link(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                            a.margin-right.highlight__link(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+                            a#onlineExp(href=linkDp target="_blank" rel="noreferrer noopener") #{linkDetail03}
+                    .o-parent__container
+                        #border-top 
+                        .copyright-image
+                            span ©
+                            span #{credit01}
+
+                //- Accorddion details
+                .o-details_accordion__container
+                    .m-details_accordion__wrapper
+                        button(type="button" class="accordion--services") Details
+                        .panel
+                            //- Service 01
+                            ul.service
+                                li.number-service 01
+                                li.infos-service
+                                    h4.title-service #{titleService01}
+                                    p.content-service #{contentService011}
+                                    p.content-service #{contentService012}
+                            //- Service 02
+                            ul.service
+                                li.number-service 02
+                                li.infos-service
+                                    h4.title-service #{titleService02}
+                                    p.content-service #{contentService021}
+                                    p.content-service #{contentService022}
+                            //- Service 03
+                            ul.service
+                                li.number-service 03
+                                li.infos-service
+                                    h4.title-service #{titleService03}
+                                    p.content-service #{contentService031}
+                                    p.content-service #{contentService032}
+                
+                //- Next previous project
+                include includes/next-previous-container
+
+                //-Footer Desktop
+                include includes/footer-desktop-project
+
+        //- Mixin js scripts
+        include includes/script
+        

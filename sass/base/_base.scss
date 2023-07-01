@@ -1,0 +1,153 @@
+/**
+ * = RESET CSS
+ *
+ * Reset de tous les paramtres css par class 
+ * 
+ * ========================================================================= */
+
+/**
+ * = 01 - HTML BASE
+ * ------------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  cursor: crosshair;
+}
+
+/**
+ * = 02 - MARGINS PADDINGS & BORDERS 
+ * ------------------------------------------------------------------------- */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
+blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/**
+ * = 03 - LINKS
+ * ------------------------------------------------------------------------- */
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/**
+ * = 04 - LAYOUTS
+ * ------------------------------------------------------------------------- */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+ * = 04 - SPECIFIC ELEMENTS
+ * ------------------------------------------------------------------------- */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+  box-sizing: border-box;
+  display: block;
+}
+
+video {
+  border: none;
+}
+
+button {
+  color: $first;
+  padding: 0px; //supprime le padding-inline du bouton
+}

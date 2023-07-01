@@ -1,0 +1,62 @@
+.image__overlay {
+  position: absolute;
+  padding: $pad-L-R;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include background-color-cover(rgba(0, 0, 0, 1));
+  @include media("<=tablet") {
+    &:active {
+      //- couleur de la typo du active de la cover
+      background-position: left;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  &:hover {
+    //- couleur de la typo au hover de la cover
+    background-position: left;
+    color: rgb(255, 255, 255);
+  }
+  @include media("<=tablet") {
+    display: none;
+  }
+}
+
+.overlay__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  @include media("<=tablet") {
+    margin-left: $pad-T-B;
+  }
+
+  > div {
+    padding-top: $pad-T-B;
+    padding-bottom: $pad-T-B;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.container_bottom {
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  width: 90%;
+  & > div {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.category_wrapper > li {
+  display: flex;
+  flex-direction: row;
+}
+.index {
+  width: 10rem;
+}
+
+.indexData {
+  padding-right: $pad-L-R;
+}

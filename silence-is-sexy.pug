@@ -1,0 +1,325 @@
+//- IMAGE DETAILS
+-let imageDetail01 = "_exhibition journal : cover"
+-let imageDetail02 = "_cover : full view"
+-let imageDetail03 = "_exhibition journal : two-page spread"
+-let imageDetail04 = "_exhibition journal : two-page spread, detail"
+-let imageDetail05 = "_exhibition journal : two-page spread, images detail"
+-let imageDetail06 = "_exhibition journal : back cover, detail"
+-let imageDetail07 = "_exhibition journal : back cover, detail"
+
+//- PROJECT INFORMATION
+-let clientName = "Frac Corsica"
+-let catName = "Solo Art Show"
+-let labelProject = "FC-SAS-22"
+-let localisationProject = "Ajaccio, France 🇫🇷"
+-let dateProject = "2022"
+
+//- SERVICES
+-let service01 = "Editorial Design"
+
+//- EXTERNAL LINKS
+-let link01 = "https://https://www.frac.corsica/"
+-let link02 = "https//www.musee-fesch.com/"
+//- LINK DETAILS 
+-let linkDetail01 = "Frac Corsica"
+-let linkDetail02 = "Musée Fesch"
+
+//- CREDITS
+-let credit01 = "Copyright — PPOffice 2022."
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Exhibition journal" 
+-let contentService01 = "Printing Process : Offset (CMYK)."
+-let contentService02 = "Dimensions : Berliner (28×43 cm) | 500 copies."
+-let contentService03 = "Printing to the care of L’imprimerie Bastiaise (Bastia)."
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/decompressed-prism.html"
+-let nextProject = "/atlante.html"
+
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- Silent is sexy IMG 02
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-2-1152.webp 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-2-1440.webp 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-2-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-2-1152.jpg 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-2-1440.jpg 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-2-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/silence-is-sexy/silence-is-sexy-2-1920.jpg", alt=imageDetail02)
+
+                    //- IMG - Silent is sexy 03
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-576.webp 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-960.webp 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-1152.webp 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-1440.webp 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-576.jpg 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-768.jpg 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-960.jpg 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-1152.jpg 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-1440.jpg 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-3-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/silence-is-sexy/silence-is-sexy-3-1920.jpg", alt=imageDetail03)
+                    //- IMG - Silent is sexy 04
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-576.webp 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-768.webp 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-960.webp 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-1152.webp 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-1440.webp 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-576.jpg 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-768.jpg 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-960.jpg 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-1152.jpg 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-1440.jpg 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-4-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/silence-is-sexy/silence-is-sexy-4-1920.jpg", alt=imageDetail04) 
+                    //- IMG - Silent is sexy 05
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail05}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-576.webp 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-768.webp 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-960.webp 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-1152.webp 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-1440.webp 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-576.jpg 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-768.jpg 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-960.jpg 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-1152.jpg 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-1440.jpg 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-5-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/silence-is-sexy/silence-is-sexy-5-1920.jpg", alt=imageDetail05) 
+                    //- IMG - Silent is sexy 06
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail06}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-576.webp 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-768.webp 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-960.webp 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-1152.webp 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-1440.webp 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-576.jpg 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-768.jpg 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-960.jpg 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-1152.jpg 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-1440.jpg 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-6-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/silence-is-sexy/silence-is-sexy-6-1920.jpg", alt=imageDetail06)
+                    //- IMG - Silent is sexy 07
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail07}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-576.webp 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-768.webp 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-960.webp 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-1152.webp 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-1440.webp 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-576.jpg 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-768.jpg 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-960.jpg 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-1152.jpg 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-1440.jpg 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-7-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/silence-is-sexy/silence-is-sexy-7-1920.jpg", alt=imageDetail07)
+                    //- IMG - Silent is sexy 01
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail01}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-576.webp 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-768.webp 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-960.webp 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-1152.webp 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-1440.webp 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-576.jpg 576w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-768.jpg 768w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-960.jpg 960w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-1152.jpg 1152w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-1440.jpg 1440w,\
+                                /public/img/silence-is-sexy/silence-is-sexy-1-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/silence-is-sexy/silence-is-sexy-1-1920.jpg", alt=imageDetail01)
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+                                span #{service02}
+                                span #{service03}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__itemVisual One of the first studio’s assignement as the new graphic design team for the FRAC Corsica - Fonds Régional d'Art Contemporain (Corte, Corsica). Exhibition journal designed for the presentation of Bruno Peinado's artwork <i>Untitled, Silence is sexy</i> (Inflatable structure, blower, time delay, variable dimensions) at Palais Fesch - Museum of Fine Arts, Ajaccio. The transcription document acts both as the artwork caption, features an interview between Fabien Danesi (Head curator) and the artist, while detailing his portfolio, showing images and documentation of this work exhibited in various galleries and museums.
+                            p.a-text_project__item  Created in 1982 at the initiative of the French Ministry of Culture, on the basis of a State-Regions partnership, the FRAC (Fonds régionaux d'art contemporain) are an original and essential tool for supporting creation, cultural planning of the territory and public awareness, particularly by the mobility of the collections that characterizes them. The dissemination of works, their circulation through exhibitions, their visibility through publications contribute to the dissemination and export of French culture.
+
+                        //- External Website
+                        .scrollmenu.scroll_horizontal
+                            #list_services_still
+                                span External links : 
+                            #list_services_justify.external_links
+                                a.margin-right.highlight__link(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                                a.highlight__link(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService01}
+                                        p.content-service #{contentService02}
+                                        p.content-service #{contentService03}
+                    
+                    //- Next previous project
+                    include includes/next-previous-container
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

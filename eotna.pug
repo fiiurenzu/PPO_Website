@@ -1,0 +1,530 @@
+//- IMAGE DETAILS
+-let imageDetail01 = "_lettering 01"
+-let imageDetail02 = "_poster"
+-let imageDetail03 = "_offprint art book fair : event t-shirt"
+-let imageDetail04 = "_lettering 02"
+-let imageDetail05 = "_nusignal exhibition booklet"
+-let imageDetail06 = "_nusignal exhibition booklet"
+-let imageDetail07 = "_nusignal exhibition booklet"
+-let imageDetail08 = "_nusignal exhibition booklet"
+-let imageDetail09 = "_nusignal exhibition booklet"
+-let imageDetail10 = "_nusignal : exhibit hall plan"
+-let imageDetail11 = "_nusignal : exhibit hall plan"
+-let imageDetail12 = "_nusignal posters"
+-let imageDetail13 = "_poster : selected and featured during Post-Medium (Le Signe, Graphic design festival)"
+-let imageDetail14 = "_exhibition sign"
+
+
+//- PROJECT INFORMATION
+-let clientName = "Entercourse Of The New Age"
+-let catName = "Art Publisher"
+-let labelProject = "EOT-AP-19"
+-let localisationProject = "Paris, FR 🇫🇷"
+-let dateProject = "2019"
+
+//- SERVICES
+-let service01 = "Art direction,"
+-let service02 = "Graphic design,"
+-let service03 = "Exhibition Design."
+
+//- EXTERNAL LINKS
+-let link01 = "https://www.eotna.net/"
+-let link02 = "https://www.centrenationaldugraphisme.fr/le-signe/collection/entercourse-of-the-new-age/"
+
+//- LINK DETAILS 
+-let linkDetail01 = "Entercourse Of The New Age"
+-let linkDetail02 = "Post-medium"
+
+//- CREDITS
+-let credit01 = "Copyright — PPOffice 2019 — Poster : Photography by Diane Arques / ADAGP, Paris, 2019."
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Poster EOTNA" 
+-let contentService11 = "Printing Process : Offset (Black & Silver)"
+-let contentService12 = "Size : 400×600 mm | 250 copies."
+//- DETAIL02
+-let titleService02 = "Exhibition booklet" 
+-let contentService21 = "Printing Process : Digital Print & Silver Hot-foiled"
+-let contentService22 = "Size : 210×270 mm | 50 copies."
+//- DETAIL03
+-let titleService03 = "Promotional asset — Offprint Art book fair T-shirts" 
+-let contentService31 = "Partnership with Edwin Europe"
+-let contentService32 = "Printing Process : Silkscreen (Black)"
+-let contentService33 = "Sizes : S, M, L | 250 copies."
+//- DETAIL04
+-let titleService04 = "Poster Nusignal dyptich" 
+-let contentService41 = "Printing Process : Digital print (Black)"
+-let contentService42 = "Size : 420×594 mm | 50 copies."
+//- DETAIL05
+-let titleService05 = "Exhibit hall plan" 
+-let contentService51 = "Printing Process : Digital print (Black)"
+-let contentService52 = "Size : 210×400 mm | 50 copies."
+//- DETAIL06
+-let titleService06 = "Stickers" 
+-let contentService61 = "Printing Process : Digital (Black)"
+-let contentService62 = "Size : 125×50 mm | 500 copies."
+//- DETAIL07
+-let titleService07 = "Exhibition sign" 
+-let contentService71 = "Printing Process : Adhesive vinyl lettering"
+-let contentService72 = "Size : 80×1550 mm | Unique."
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/adasokol.html"
+-let nextProject = "/tunica.html"
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- IMG eotna 01
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail01}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-12-1152.webp 1152w,\
+                                /public/img/eotna/eotna-12-1440.webp 1440w,\
+                                /public/img/eotna/eotna-12-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-12-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-12-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-12-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-12-1920.jpg", alt=imageDetail01)
+                    //- IMG - eotna 02
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-16-1152.webp 1152w,\
+                                /public/img/eotna/eotna-16-1440.webp 1440w,\
+                                /public/img/eotna/eotna-16-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-16-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-16-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-16-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-16-1920.jpg", alt=imageDetail02)
+                    //- IMG - eotna 03
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-17-1152.webp 1152w,\
+                                /public/img/eotna/eotna-17-1440.webp 1440w,\
+                                /public/img/eotna/eotna-17-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-17-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-17-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-17-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-17-1920.jpg", alt=imageDetail03) 
+                    //- IMG - eotna 04
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-01-1152.webp 1152w,\
+                                /public/img/eotna/eotna-01-1440.webp 1440w,\
+                                /public/img/eotna/eotna-01-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-01-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-01-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-01-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-01-1920.jpg", alt=imageDetail04)
+                    //- IMG - eotna 05
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail05}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-03-1152.webp 1152w,\
+                                /public/img/eotna/eotna-03-1440.webp 1440w,\
+                                /public/img/eotna/eotna-03-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-03-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-03-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-03-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-03-1920.jpg", alt=imageDetail05)
+                    //- IMG - eotna 06
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail06}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-04-1152.webp 1152w,\
+                                /public/img/eotna/eotna-04-1440.webp 1440w,\
+                                /public/img/eotna/eotna-04-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-04-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-04-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-04-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-04-1920.jpg", alt=imageDetail06)
+                    //- IMG - eotna 07
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail07}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-06-1152.webp 1152w,\
+                                /public/img/eotna/eotna-06-1440.webp 1440w,\
+                                /public/img/eotna/eotna-06-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-06-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-06-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-06-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-06-1920.jpg", alt=imageDetail07)
+                    //- IMG - eotna 08
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail08}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-07-1152.webp 1152w,\
+                                /public/img/eotna/eotna-07-1440.webp 1440w,\
+                                /public/img/eotna/eotna-07-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-07-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-07-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-07-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-07-1920.jpg", alt=imageDetail08)
+                    //- IMG - eotna 09
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail09}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-08-1152.webp 1152w,\
+                                /public/img/eotna/eotna-08-1440.webp 1440w,\
+                                /public/img/eotna/eotna-08-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-08-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-08-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-08-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-08-1920.jpg", alt=imageDetail09)
+                    //- IMG - eotna 10
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail10}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-20-1152.webp 1152w,\
+                                /public/img/eotna/eotna-20-1440.webp 1440w,\
+                                /public/img/eotna/eotna-20-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-20-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-20-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-20-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-20-1920.jpg", alt=imageDetail10)
+                    //- IMG - eotna 11
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail11}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-19-1152.webp 1152w,\
+                                /public/img/eotna/eotna-19-1440.webp 1440w,\
+                                /public/img/eotna/eotna-19-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-19-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-19-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-19-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-19-1920.jpg", alt=imageDetail11)
+                    //- IMG - eotna 12
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail12}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-13-1152.webp 1152w,\
+                                /public/img/eotna/eotna-13-1440.webp 1440w,\
+                                /public/img/eotna/eotna-13-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-13-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-13-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-13-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-13-1920.jpg", alt=imageDetail12)
+                    //- IMG - eotna 13
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail13}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-18-1152.webp 1152w,\
+                                /public/img/eotna/eotna-18-1440.webp 1440w,\
+                                /public/img/eotna/eotna-18-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-18-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-18-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-18-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-18-1920.jpg", alt=imageDetail13)
+                    //- IMG - eotna 14
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail14}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/eotna/eotna-21-1152.webp 1152w,\
+                                /public/img/eotna/eotna-21-1440.webp 1440w,\
+                                /public/img/eotna/eotna-21-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/eotna/eotna-21-1152.jpg 1152w,\
+                                /public/img/eotna/eotna-21-1440.jpg 1440w,\
+                                /public/img/eotna/eotna-21-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/eotna/eotna-21-1920.jpg", alt=imageDetail14)
+
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+                                span #{service02}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__itemVisual  The studio was commissioned to design the new visual identity of the Art publisher Entercourse of The New Age. The graphic system fits itself in a modular logic, playing with architectonic figures, in response to fundamental operations mobilised by the publisher : reproduction, exhibition-space, and reinterpretation of their uses.
+                            p.a-text_project__item  During this 6 months collaboration alongside the Art publisher, we had the occasion to co-curate and to supervise his most recent exhibition <span id="exhibition">Nu Signal</span> at Gallery Martine Aboucaya (Paris, FR). We also held a booth next to him at Offprint London 2019 (Tate Modern, London). The Poster we designed as part of his new visual Identity was selected and shown at <span id="exhibition">Post-Medium</span>, the main exhibition taking place during the International Graphic design Biennal 2019 (Chaumont, FR) as well as the International Poster exhibition (Glasgow, SCT).
+                            p.a-text_project__item  Initiated by two DJs, Yann Desfougère & David Chastel, Entercourse Of The New Age (E.O.T.N.A.) specializes itself in the hand-crafted conception of industrial products.                           
+                            p.a-text_project__item  E.O.T.N.A. collaborates with contemporary artists, illustrators, graphic designers and photographers to edit, exhibit and commercialize a graphic and plastic response to a series of records from Chicago House Music produced between 1984 and 1999 that didn’t have any artwork at the time of their first commercial distribution.                           
+
+                        //- External Website
+                        .scrollmenu.scroll_horizontal
+                            #list_services_still
+                                span External links : 
+                            #list_services_justify.external_links
+                                a.highlight__link(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                                a.highlight__link(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+
+                        //- Copyright      
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService11}
+                                        p.content-service #{contentService12}
+                                //- Service 01
+                                ul.service
+                                    li.number-service 02
+                                    li.infos-service
+                                        h4.title-service #{titleService02}
+                                        p.content-service #{contentService21}
+                                        p.content-service #{contentService22}
+                                //- Service 01
+                                ul.service
+                                    li.number-service 03
+                                    li.infos-service
+                                        h4.title-service #{titleService03}
+                                        p.content-service #{contentService31}
+                                        p.content-service #{contentService32}
+                                        p.content-service #{contentService33}
+                                //- Service 04
+                                ul.service
+                                    li.number-service 04
+                                    li.infos-service
+                                        h4.title-service #{titleService04}
+                                        p.content-service #{contentService41}
+                                        p.content-service #{contentService42}
+                                //- Service 05
+                                ul.service
+                                    li.number-service 05
+                                    li.infos-service
+                                        h4.title-service #{titleService05}
+                                        p.content-service #{contentService51}
+                                        p.content-service #{contentService52}
+                                //- Service 06
+                                ul.service
+                                    li.number-service 06
+                                    li.infos-service
+                                        h4.title-service #{titleService06}
+                                        p.content-service #{contentService61}
+                                        p.content-service #{contentService62}
+                                //- Service 07
+                                ul.service
+                                    li.number-service 07
+                                    li.infos-service
+                                        h4.title-service #{titleService07}
+                                        p.content-service #{contentService71}
+                                        p.content-service #{contentService72}
+                    
+                    //- Next previous project
+                    include includes/next-previous-container
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

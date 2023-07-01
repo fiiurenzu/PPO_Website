@@ -1,0 +1,16 @@
+/**
+* = 01 - NOM CLIENT 
+*
+* ------------------------------------------------------------------------- */
+#mobile {
+  display: block;
+  @include media(">=tablet") {
+    display: none;
+  }
+}
+#desktop {
+  display: none;
+  @include media(">=tablet") {
+    display: block;
+  }
+}

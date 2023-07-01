@@ -1,0 +1,73 @@
+// FOOTER DESKTOP //
+.o-footerHome__container,
+.o-footerProject__container {
+  width: 50%;
+  background-color: $second;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: $pad-T-B;
+  // QUAND SCREEN DEVIENT FORMAT MOBILE ALORS LE FOOTER DESKTOP HIDDEN//
+  @include media("<=1023px") {
+    display: none;
+    padding-right: 0;
+  }
+}
+.o-footerHome__container {
+  left: 0;
+  padding-left: $pad-L-R;
+}
+
+// id pour masquer depassement du footer sur la home dans SAFARI
+#footer_padding_home {
+  left: 0;
+  padding-left: $pad-L-R;
+}
+#footer_padding_project {
+  padding-right: $pad-L-R;
+}
+
+.m-footer__wrapper {
+  @include index_container-style;
+  align-items: center; //aligner item sur safari
+}
+.a-footer__item {
+  padding: $pad-T-B $pad-L-R;
+  &:first-child {
+    width: $col;
+    text-align: center;
+  }
+  &:nth-child(2) {
+    border-left: $border;
+    border-right: $border;
+    //BORDER GAUCHE ET DROITE DE LA CASE CONTACT//
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
+// FOOTER MOBILE //
+.o-footer__container--mobile {
+  width: 100%;
+  background-color: $second;
+  @include media(">1023px") {
+    display: none;
+  }
+}
+.m-footer__wrapper--mobile {
+  @include index_container-style;
+  > a {
+    border-right: $border;
+  }
+}
+
+.a-footer__item--mobile {
+  border-right: $border;
+  padding: $pad-T-B $pad-L-R;
+  line-height: 1rem !important; // l 'emoji créé un deplacement vertical ce parametre permet d'aligner verticalement les elements dans les container avec l'emoji
+  &:first-child {
+    width: $col;
+  }
+  &:last-child {
+    border-right: none;
+  }
+}

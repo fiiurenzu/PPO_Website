@@ -1,0 +1,65 @@
+/**
+ * = ACCORDION 
+ *
+ * Bouton .accordion
+ * .panel = systeme d'ouverture
+ * .service = informations présentées
+ *
+ * ------------------------------------------------------------------------- */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion--contribution,
+.accordion--exhibition,
+.accordion--services {
+  color: $first;
+  background-color: $second;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 400ms;
+  padding-top: $pad-T-B;
+  padding-bottom: $pad-T-B;
+}
+.accordion--contribution:after,
+.accordion--exhibition:after,
+.accordion--services:after {
+  content: "+"; /* Unicode character for "plus" sign (+) */
+  float: right;
+}
+
+.active:after {
+  content: "-"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: $second;
+  max-height: 0px;
+  transition: max-height 250ms ease-in-out;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  //-ms-overflow-style: none; // OVERFLOW POUR IE & EDGE
+  //scrollbar-width: none; // DISABLE SCROLLBAR FIREFOX
+}
+
+.service {
+  padding-top: 5px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-areas: "number-service infos-service";
+  border-bottom: $border;
+  .number-service {
+    grid-area: number-service;
+  }
+  .infos-service {
+    grid-area: infos-service;
+    :nth-child(2) {
+      padding-top: 5px;
+    }
+    :last-child {
+      padding-bottom: 5px;
+    }
+  }
+}

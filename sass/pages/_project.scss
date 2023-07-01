@@ -1,0 +1,107 @@
+/**
+ * = 01 - PROJECT PAGE LEFT
+ * ------------------------------------------------------------------------- */
+.m-pageSplit_projectLeft__wrapper {
+  order: 2;
+  @include media(">=desktop") {
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    order: 1;
+  }
+}
+
+/**
+* = 02 - PROJECT PAGE RIGHT
+* ------------------------------------------------------------------------- */
+.m-pageSplit_projectRight__wrapper {
+  order: 1;
+  @include media(">=desktop") {
+    order: 2;
+    position: fixed;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    padding-right: $pad-L-R;
+    border-left: $border;
+  }
+  > .m-index_heading__wrapper {
+    margin-top: 33px;
+    border-top: none;
+    @include media(">=desktop") {
+      margin-top: 0;
+    }
+    > .a-index_heading__item {
+      border-left: $border;
+    }
+  }
+}
+
+/**
+* = 02 - TEXTE CONTAINER
+* Liens externes
+* ------------------------------------------------------------------------- */
+.m-text_project__container {
+  position: relative;
+  @include cadre-container;
+  padding-right: $pad-L-R;
+  @include media(">=desktop") {
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+    scroll-snap-type: y mandatory;
+  }
+}
+
+/* = PARAGRAPHE TEXTE */
+.m-text_project__wrapper {
+  position: relative;
+  max-height: 30vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  :first-child {
+    padding-top: 0;
+  }
+  p {
+    padding-top: 1.3rem;
+  }
+}
+
+#word-noWrap {
+  white-space: nowrap;
+}
+
+/**
+* = 03 - TEXTE CONTAINER
+* Liens externes
+* ------------------------------------------------------------------------- */
+#border-top {
+  padding-top: $level-1;
+  margin-bottom: 5px;
+  width: $col;
+  height: 1px;
+  border-bottom: 2px solid $first;
+  background-color: $second;
+}
+.copyright-image {
+  padding-bottom: $pad-T-B;
+  display: flex;
+  flex-direction: row;
+  :nth-child(1) {
+    margin-right: 3rem;
+  }
+}
+
+/**
+* = 04 - ACCORIDON DETAILS
+* ------------------------------------------------------------------------- */
+.o-details_accordion__container {
+  display: block;
+  padding: 0 $pad-L-R;
+  @include media(">tablet") {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+  }
+}

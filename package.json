@@ -1,0 +1,13 @@
+{
+  "name": "panamapapersoffice",
+  "version": "1.0.0",
+  "description": " Website panama papers office studio ™ ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "PPO",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

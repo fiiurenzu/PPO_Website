@@ -1,0 +1,53 @@
+/**
+ * = 01 - INFOS CONTAINER COMMUN
+ * ------------------------------------------------------------------------- */
+@mixin index_container-style {
+  border-top: $border;
+  border-bottom: $border;
+  display: flex;
+  flex-direction: row;
+}
+
+/**
+ * = 02 - BOX SHADOW HOVER SLIDE RIGHT 
+ * PERMET DE CREER UN EFFET D'ANIMATION DE REMPLISSEMENT DE BOITE DE GAUCHE  DROITE
+ * ------------------------------------------------------------------------- */
+@mixin button-slide-right($speed: 400ms) {
+  background: linear-gradient(to left, $second 50%, $first 50%) right;
+  background-size: 201%;
+  transition: $speed ease-in-out;
+}
+@mixin button-slide-right--hover {
+  background-position: left;
+  color: $second;
+}
+
+/**
+ * = 03 - PADDING & BORDER POUR CADRE DE CONTAINER
+ * ------------------------------------------------------------------------- */
+
+@mixin cadre-container($padding-left: $pad-L-R, $padding-right: $pad-L-R) {
+  padding-left: $pad-L-R;
+  padding-right: $pad-L-R;
+  border-bottom: $border;
+}
+
+/**
+ * = 04 - LINKS & COPYRIGHT PROJECT 
+ * ------------------------------------------------------------------------- */
+
+@mixin padding-links-copyright($padding-top: 0.5rem, $padding-bottom: 0.5rem) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
+/**
+ * = 05 - COVER BACKGROUND OCLOR
+ * ------------------------------------------------------------------------- */
+
+@mixin background-color-cover($color: black) {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 35%, $color 65%) right;
+  background-size: 300%;
+  transition: 0.5s ease-in-out;
+  color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,32 @@
+// UTILS //
+@import "./utils/variables.scss";
+@import "./utils/breakpoints.scss";
+@import "./utils/mixins";
+
+// BASE //
+@import "./base/_font";
+@import "./base/base.scss";
+@import "./base/typography";
+
+// COMPONENTS //
+@import "./components/imagesVideo--project";
+@import "./components/button-previous-next";
+@import "./components/cover_image_overlay";
+@import "./components/_info-bulle";
+@import "./components/_accordion";
+@import "./components/highlight-links";
+@import "./components/scrollmenu";
+@import "./components/hidden-text";
+@import "./components/_scrollbar";
+@import "./components/_grid_title_infos_project";
+@import "./components/_collaborator";
+
+// LAYOUT //
+@import "./layout/navbar.scss";
+@import "./layout/_index";
+@import "./layout/footer";
+
+// PAGES //
+@import "./pages/pageLayout";
+@import "./pages/_home";
+@import "./pages/_project";

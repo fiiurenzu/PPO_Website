@@ -1,0 +1,12 @@
+/**
+ * = 01 - CONTAINER COMMUN
+ * ------------------------------------------------------------------------- */
+.o-pageSplit__container {
+  display: flex;
+  flex-direction: column;
+  @include media(">=desktop") {
+    flex-direction: row;
+    position: relative;
+    height: 100vh;
+  }
+}

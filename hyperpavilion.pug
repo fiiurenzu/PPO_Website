@@ -1,0 +1,295 @@
+//- IMAGE DETAILS
+-let imageDetail01 = "_lettering : detail"
+-let imageDetail02 = "_lettering : full view installation"
+-let videoDetail03 = "_leaflet poster : image detail"
+-let imageDetail03 = "_leaflet poster : details"
+-let imageDetail04 = "_sofia crespo : exhibition titling" 
+-let imageDetail05 = "_leaflet poster : details"
+-let imageDetail06 = "_leaflet poster : details"
+-let imageDetail07 = "_leaflet poster : image détails"
+
+//- PROJECT INFORMATION
+-let clientName = "HyperPavilion"
+-let catName = "Solo Art Show"
+-let labelProject = "HP-SAS-21"
+-let localisationProject = "Miami, Usa 🇺🇸"
+-let dateProject = "2021"
+
+//- SERVICES
+-let service01 = "Graphic design,"
+-let service02 = "Type design,"
+-let service03 = "Layout"
+
+
+//- EXTERNAL LINKS
+-let link01 = "https://sofiacrespo.com/"
+-let link02 = "https://www.hyperpavilion.io/projects"
+//- LINK DETAILS 
+-let linkDetail01 = "Sofia Crespo"
+-let linkDetail02 = "HyperPavilion"
+
+//- CREDITS
+-let credit01 = "Copyright — PPOffice 2021."
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Leaflet poster" 
+-let contentService1 = "Printing Process : Offset (CMYK), Offset (Black)"
+-let contentService2 = "Dimensions : 56×86,4 cm | 800 copies."
+-let contentService3 = "Image on front side : Opening the ocean’s heart, Sofia Crespo, Machine learning, 2021."
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/refresh.html"
+-let nextProject = "/newpeace.html"
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- IMG untitledart 01
+                    section.m-image__wrapper
+                        span.a-image__description__item #{imageDetail01}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-01-1152.webp 1152w,\
+                                /public/img/hyperpavilion/untitledart-01-1440.webp 1440w,\
+                                /public/img/hyperpavilion/untitledart-01-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-01-1152.jpg 1152w,\
+                                /public/img/hyperpavilion/untitledart-01-1440.jpg 1440w,\
+                                /public/img/hyperpavilion/untitledart-01-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hyperpavilion/untitledart-01-1920.jpg", alt=imageDetail01)
+                    //- IMG - untitledart 02
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-02-1152.webp 1152w,\
+                                /public/img/hyperpavilion/untitledart-02-1440.webp 1440w,\
+                                /public/img/hyperpavilion/untitledart-02-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-02-1152.jpg 1152w,\
+                                /public/img/hyperpavilion/untitledart-02-1440.jpg 1440w,\
+                                /public/img/hyperpavilion/untitledart-02-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hyperpavilion/untitledart-02-1920.jpg", alt=imageDetail02)
+                    //- IMG - untitledart 03
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-03-1152.webp 1152w,\
+                                /public/img/hyperpavilion/untitledart-03-1440.webp 1440w,\
+                                /public/img/hyperpavilion/untitledart-03-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-03-1152.jpg 1152w,\
+                                /public/img/hyperpavilion/untitledart-03-1440.jpg 1440w,\
+                                /public/img/hyperpavilion/untitledart-03-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hyperpavilion/untitledart-03-1920.jpg", alt=imageDetail03) 
+                    //- IMG - untitledart 04
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-04-1152.webp 1152w,\
+                                /public/img/hyperpavilion/untitledart-04-1440.webp 1440w,\
+                                /public/img/hyperpavilion/untitledart-04-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-04-1152.jpg 1152w,\
+                                /public/img/hyperpavilion/untitledart-04-1440.jpg 1440w,\
+                                /public/img/hyperpavilion/untitledart-04-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hyperpavilion/untitledart-04-1920.jpg", alt=imageDetail04)
+                    //- IMG - untitledart 05
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail05}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-05-1152.webp 1152w,\
+                                /public/img/hyperpavilion/untitledart-05-1440.webp 1440w,\
+                                /public/img/hyperpavilion/untitledart-05-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-05-1152.jpg 1152w,\
+                                /public/img/hyperpavilion/untitledart-05-1440.jpg 1440w,\
+                                /public/img/hyperpavilion/untitledart-05-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hyperpavilion/untitledart-05-1920.jpg", alt=imageDetail05)
+                    //- IMG - untitledart 06
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail06}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-06-1152.webp 1152w,\
+                                /public/img/hyperpavilion/untitledart-06-1440.webp 1440w,\
+                                /public/img/hyperpavilion/untitledart-06-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-06-1152.jpg 1152w,\
+                                /public/img/hyperpavilion/untitledart-06-1440.jpg 1440w,\
+                                /public/img/hyperpavilion/untitledart-06-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hyperpavilion/untitledart-06-1920.jpg", alt=imageDetail06)
+                    //- IMG - untitledart 07
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail07}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-07-1152.webp 1152w,\
+                                /public/img/hyperpavilion/untitledart-07-1440.webp 1440w,\
+                                /public/img/hyperpavilion/untitledart-07-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hyperpavilion/untitledart-07-1152.jpg 1152w,\
+                                /public/img/hyperpavilion/untitledart-07-1440.jpg 1440w,\
+                                /public/img/hyperpavilion/untitledart-07-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hyperpavilion/untitledart-07-1920.jpg", alt=imageDetail07)
+                    
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+                                span #{service02}
+                                span #{service03}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__itemVisual Communication materials designed for the Hyperpavilion‘s art space featuring the work of Argentinian neural artist Sofia Crespo. The solo show <span id="exhibition">LIFE 3.0</span> was on view during Untitled Art as part of Art Basel Miami Beach.
+                            p.a-text_project__item  HyperPavilion is a platform to study and debate themes associated with the age of hyperintelligence and the scenarios opened by it. Founded by Philippe Riss-Schmidt in 2016 during the 57th Venice Biennale, HyperPavilion’s dynamic selection addressed art after the arrival of the digital and inspired curatorial investigation into new ways to exhibit these outcomes. The curatorial platform draws our attention to the ways in which these new realities are shaping our lives and how entire new-ecosystems are reshaping the world.
+                            p.a-text_project__item Sofia Crespo is an artist working with a huge interest in biology-inspired technologies. One of her main focuses is the way organic life uses artificial mechanisms to simulate itself and evolve, this implying the idea that technologies are a biased product of the organic life that created them and not a completely separated object. Crespo looks at the similarities between techniques of AI image formation, and the way that humans express themselves creatively and cognitively recognize their world. Her work brings into question the potential of AI in artistic practice and its ability to reshape our understanding of creativity. On the side, she is also hugely concerned with the dynamic change in the role of the artists working with machine learning techniques.
+
+                        //- External Website
+                        .scrollmenu.scroll_horizontal
+                            #list_services_still
+                                span External links : 
+                            #list_services_justify.external_links
+                                a.highlight__link.margin-right(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                                a.highlight__link.margin-right(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+                                a#onlineExp(href=linkDp target="_blank" rel="noreferrer noopener") #{linkDetail03}
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService1}
+                                        p.content-service #{contentService2}
+                                        p.content-service #{contentService3}
+                    
+                    //- Next previous project
+                    include includes/next-previous-container 
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

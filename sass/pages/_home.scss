@@ -1,0 +1,147 @@
+/**
+* = 01 - HOME PAGE LEFT
+* ------------------------------------------------------------------------- */
+.m-pageSplit_homeLeft__wrapper {
+  @include media(">=desktop") {
+    width: 50%;
+    padding-left: $pad-L-R;
+    max-height: 100vh;
+    position: fixed;
+  }
+}
+
+/**
+* = 02 - ABOUT
+* ------------------------------------------------------------------------- */
+#container__about {
+  margin-top: 34px; //decalage margin mobile
+  @include media(">=desktop") {
+    margin-top: 0;
+  }
+}
+
+/**
+* = 03 - CONTAINER COMMUN TEXTE INFORMATIONS
+* bio ppo + textes collaborateurs
+* ------------------------------------------------------------------------- */
+.o-infos_container--border-bottom {
+  border-bottom: $border;
+}
+.m-infos__text_wrapper {
+  margin-left: $col;
+}
+.a-infos__text_item {
+  padding: $pad-L-R;
+}
+
+/**
+* = 04 - CONTACT
+* ------------------------------------------------------------------------- */
+
+#contact__grid_container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    " adress"
+    " inquiries"
+    " application ";
+  @include media(">=desktop") {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      " adress ."
+      " inquiries application ";
+  }
+}
+#ppoAdress {
+  grid-area: adress;
+  padding: calc(#{$pad-T-B}* 2) $pad-L-R;
+}
+#inquiries {
+  grid-area: inquiries;
+  padding-bottom: calc(#{$pad-T-B}* 2);
+}
+#application {
+  grid-area: application;
+  padding-bottom: calc(#{$pad-T-B}* 2);
+}
+#hidden {
+  display: none;
+}
+
+/**
+* = CONTAINER CONTRIBUTION & EXHIBITION 
+* Container qui gere la grid des deux element contribution + exhibition
+* ------------------------------------------------------------------------- */
+.o-contributionsExhibitions__container {
+  display: block;
+  margin-left: $col;
+  @include media("<=tablet") {
+    padding-right: $pad-L-R;
+  }
+  @include media(">tablet") {
+    display: flex;
+    flex-direction: row;
+  }
+  /*:last-child {
+    @include media(">=desktop") {
+      padding-right: $pad-L-R;
+    }
+  }*/
+}
+.m-contributionExhibition__wrapper {
+  padding-left: $pad-L-R;
+  padding-right: $pad-L-R;
+  @include media(">=desktop") {
+    width: 50%;
+  }
+}
+
+.title-service {
+  display: inline;
+}
+.o-contributionsExhibitions__container a {
+  //slectionne et applique un underline a tous les liens
+  text-decoration: underline;
+}
+
+/**
+* = 04 - HOME PAGE RIGHT
+* ------------------------------------------------------------------------- */
+.m-pageSplit_homeRight__wrapper {
+  @include media(">=desktop") {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+  }
+}
+
+/**
+* = 04 - INDEX : PROJECT
+* ------------------------------------------------------------------------- */
+.m-pageSplit_homeRight__wrapper {
+  > .m-index_heading__wrapper {
+    margin-top: 5px;
+    @include media(">=desktop") {
+      border-left: $border;
+    }
+  }
+}
+
+/**
+* = 04 - COVER IMAGES
+* ------------------------------------------------------------------------- */
+.o-coverImage__container {
+  border-left: none;
+  position: relative;
+  @include media(">=desktop") {
+    border-left: $border;
+    border-bottom: $border;
+  }
+}
+
+.a-coverImage__item {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,145 @@
+//- IMAGE DETAILS
+-let imageDetail01 = "_poster : full view"
+-let imageDetail02 = "_poster : detail"
+-let imageDetail03 = "_poster : detail"
+-let imageDetail04 = "_poster : detail"
+
+
+//- PROJECT INFORMATION
+-let clientName = "Frac Corsica"
+-let catName = "Duo Art Show"
+-let labelProject = "FC-DAS-22"
+-let localisationProject = "Corte, France 🇫🇷"
+-let dateProject = "2022"
+
+//- SERVICES
+-let service01 = "Poster design"
+
+//- EXTERNAL LINKS
+-let link01 = "https://www.zeynjoukhadar.com/"
+-let link02 = "https://www.matteorubbi.com/"
+//- LINK DETAILS 
+-let linkDetail01 = "Zeyn Joukhadar"
+-let linkDetail02 = "Matteo Rubbi"
+
+//- CREDITS
+-let credit01 = "Copyright — PPOffice 2022"
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Poster" 
+-let contentService01 = "Printing Process : Offset (CMYK) Dimensions : 40×60 cm | 80×120 cm | 120×176 cm. Printing to the care of L’imprimerie Bastiaise (Bastia)." 
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/silence-is-sexy.html"
+-let nextProject = "/refresh.html"
+
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- Atlante image 01
+                    section(class="m-image__wrapper")
+                        span(class="a-image__description__item") #{imageDetail01}
+                        picture(class="a-projectImage__item")
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/atlante/atlante-01-1152.webp 1152w,\
+                                /public/img/atlante/atlante-01-1440.webp 1440w,\
+                                /public/img/atlante/atlante-01-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/atlante/atlante-01-1152.jpg 1152w,\
+                                /public/img/atlante/atlante-01-1440.jpg 1440w,\
+                                /public/img/atlante/atlante-01-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/atlante/atlante-01-1920.jpg", alt=imageDetail01)
+
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__item Poster as part of the visual communication campaign that the studio directed for <i>L’atlante di e meraviglie (The Atlas of Marvels)</i>, the&nbsp;duo exhibition of Zeyn Joukhadar & Matteo Rubbi.
+                            p.a-text_project__item Taking as their starting point <i>The Book of Fixed Stars</i> by the astronomer Abd-Al-Rahman Al-Sûfi around 964, Zeyn Joukhadar and Matteo Rubbi have conceived the exhibition as a collection of fragments of an imaginary manuscript, in order to bring back the erased sky. Each piece refers to a part of a book entitled L'atlante di e meraviglie, which reminds us that the stars cannot be reduced to data: "Today," explain the two artists, "it is easy to visualize the constellations of the night sky on a cell phone with various applications. But for many peoples, the sky has traditionally been much more : a calendar, a temple, a map, a library, an indestructible collection of stories and wisdom. Our roots as peoples of the Mediterranean, Southwest Asia and/or North Africa are intertwined, and the sky offers us the millennia-old stories of exchange and migration. The modern sky is superimposed on ancient motifs. And contemporary figures refer to much more distant names; the night sky is transnational, transcontinental and multilingual." Zeyn Joukhadar and Matteo Rubbi solicited children and teenagers from the island to collectively create a messy sky and think about the notion of erasure. Previous works, which complete the corpus, are renamed by Zeyn, in order to constitute a part of this new atlas of wonders, which transforms the night into a formidable archaeological site, capable of projecting us into the future.
+
+                        //- External Website
+                        .scrollmenu.scroll_horizontal
+                            #list_services_still
+                                span External links : 
+                            #list_services_justify.external_links
+                                a.highlight__link(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                                a.highlight__link(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService01}
+                    
+                    //- Next previous project
+                    include includes/next-previous-container
+
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

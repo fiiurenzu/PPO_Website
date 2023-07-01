@@ -1,0 +1,263 @@
+//- IMAGE DETAILS
+-let videoDetail01 = "_logotype in motion"
+-let imageDetail01 = "_actualite 01 : kenneth goldsmith"
+-let imageDetail02 = "_actualite 01 : kenneth goldsmith"
+-let imageDetail03 = "_actualite 01 : details"
+-let imageDetail04 = "_actualite 02 : valentin vie binet"
+-let imageDetail05 = "_actualite 02 : details"
+
+//- PROJECT INFORMATION
+-let clientName = "Hotline Hotline"
+-let catName = "Art & Design Publishing Platform"
+-let labelProject = "HH-ADP-20"
+-let localisationProject = "Paris, FR 🇫🇷"
+-let dateProject = "2021"
+
+//- SERVICES
+-let service01 = "Graphic identity,"
+-let service02 = "Typeface Design"
+-let service03 = ""
+
+//- EXTERNAL LINKS
+-let link01 = "https://en.wikipedia.org/wiki/Kenneth_Goldsmith"
+-let link02 = "https://www.instagram.com/valentinviebinet/?hl=fr"
+
+//- LINK DETAILS 
+-let linkDetail01 = "Kenneth Goldsmith"
+-let linkDetail02 = "Valentin Vie Binet"
+
+//- CREDITS
+-let credit01 = "Copyright —  PPOffice 2021."
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Actualite 1 - Kenneth Goldsmith" 
+-let contentService11 = "Printing Process : Digital print"
+-let contentService12 = "Size : 210×297 mm — | 250 copies."
+//- DETAIL02
+-let titleService02 = "Actualite 2 - Valentin Vie Binet" 
+-let contentService21 = "Printing Process : Digital print"
+-let contentService22 = "Size : 210×297 mm — | 250 copies."
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/newpeace.html"
+-let nextProject = "/2h34.html"
+
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- VIDEO - HL 01
+                    section.m-image__wrapper
+                        span.a-image__description__item #{videoDetail01}
+                        video(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
+                            source(src="/public/img/hotline/hotline-video.mp4" type="video/mp4")
+                            source(src="/public/img/hotline/hotline-video.webm" type="video/webm")
+                            p logotype in motion.
+                    //- IMG HL 01
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail01}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hotline/hotline-1-1152.webp 1152w,\
+                                /public/img/hotline/hotline-1-1440.webp 1440w,\
+                                /public/img/hotline/hotline-1-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hotline/hotline-1-1152.jpg 1152w,\
+                                /public/img/hotline/hotline-1-1440.jpg 1440w,\
+                                /public/img/hotline/hotline-1-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/publicnewpeace/hotline/hotline-1-1920.jpg", alt=imageDetail01)
+                    //- IMG - HL 02
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hotline/hotline-2-1152.webp 1152w,\
+                                /public/img/hotline/hotline-2-1440.webp 1440w,\
+                                /public/img/hotline/hotline-2-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hotline/hotline-2-1152.jpg 1152w,\
+                                /public/img/hotline/hotline-2-1440.jpg 1440w,\
+                                /public/img/hotline/hotline-2-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hotline/hotline-2-1920.jpg", alt=imageDetail02)
+                    //- IMG - HL 03
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hotline/hotline-4-1152.webp 1152w,\
+                                /public/img/hotline/hotline-4-1440.webp 1440w,\
+                                /public/img/hotline/hotline-4-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hotline/hotline-4-1152.jpg 1152w,\
+                                /public/img/hotline/hotline-4-1440.jpg 1440w,\
+                                /public/img/hotline/hotline-4-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hotline/hotline-4-1920.jpg", alt=imageDetail03) 
+                    //- IMG - HL 04
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hotline/hotline-3-1152.webp 1152w,\
+                                /public/img/hotline/hotline-3-1440.webp 1440w,\
+                                /public/img/hotline/hotline-3-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hotline/hotline-3-1152.jpg 1152w,\
+                                /public/img/hotline/hotline-3-1440.jpg 1440w,\
+                                /public/img/hotline/hotline-3-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hotline/hotline-3-1920.jpg", alt=imageDetail04)
+                    //- IMG - NP 05
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail05}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/hotline/hotline-5-1152.webp 1152w,\
+                                /public/img/hotline/hotline-5-1440.webp 1440w,\
+                                /public/img/hotline/hotline-5-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/hotline/hotline-5-1152.jpg 1152w,\
+                                /public/img/hotline/hotline-5-1440.jpg 1440w,\
+                                /public/img/hotline/hotline-5-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/hotline/hotline-5-1920.jpg", alt=imageDetail05)
+
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+                                span #{service02}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__itemVisual "ACTUALITE" is a mail art series project freshly initiated by Mathieu Cenac. It is powered by HOTLINE HOTLINE, a publishing platform and a consultancy office operating in the field of Art & Design. Every 2 months, the project reveals itself by post mail spread worldwide to a selected list of figures of the contemporary art scene - to curators, collectors, art centers and galleries. Each release includes a different contributor that Mathieu met throughout his background as a co-founder and publisher of Jean-Boîte Editions.
+                            p.a-text_project__item  We’ve been asked to define the typographic direction & develop the graphic identity of the platform, both print & digital. On this occasion, we released a beta version of the typeface Sang-Neuf, designed by the studio from 2018 until now (mono and grotesk versions).                   
+
+                        //- External Website
+                        .scrollmenu.scroll_horizontal
+                            #list_services_still
+                                span External links : 
+                            #list_services_justify.external_links
+                                a.highlight__link.margin-right(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                                a.highlight__link.margin-right(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+
+                                
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService11}
+                                        p.content-service #{contentService12}
+                                //- Service 02
+                                ul.service
+                                    li.number-service 02
+                                    li.infos-service
+                                        h4.title-service #{titleService02}
+                                        p.content-service #{contentService21}
+                                        p.content-service #{contentService22}
+                    
+                    //- Next previous project
+                    include includes/next-previous-container
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

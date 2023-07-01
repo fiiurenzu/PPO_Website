@@ -1,0 +1,438 @@
+//- IMAGE DETAILS
+-let imageDetail01 = "_experimental short movie "
+-let imageDetail02 = "_exhibition view : Stedelijk museum"
+-let imageDetail03 = "_exhibition journal : two-page spread detail"
+-let imageDetail04 = "_exhibition journal : cover"
+-let imageDetail05 = "_exhibition journal : two-page spread"
+-let imageDetail06 = "_exhibition journal : two-page spread detail"
+-let imageDetail07 = "_exhibition journal : two-page spread"
+-let imageDetail08 = "_exhibition journal : two-page spread"
+-let imageDetail09 = "_exhibition journal : two-page spread detail"
+-let imageDetail10 = "_exhibition journal : two-page spread"
+-let imageDetail11 = "_exhibition journal : two-page spread detail"
+-let imageDetail12 = "_exhibition journal : two-page spread detail"
+-let imageDetail13 = "_exhibition view : Stedelijk museum"
+
+//- PROJECT INFORMATION
+-let clientName = "Évangiles"
+-let catName = "Group show"
+-let labelProject = "EG-GS-2019"
+-let localisationProject = "Amsterdam, NL 🇳🇱"
+-let dateProject = "2019"
+
+//- SERVICES
+-let service01 = "Editorial Design,"
+-let service02 = "Photography Direction."
+-let service03 = ""
+
+//- EXTERNAL LINKS
+-let link01 = "https://tasiobidegain.eu/"
+-let link02 = ""
+
+//- LINK DETAILS 
+-let linkDetail01 = "Tasio Bidegain"
+-let linkDetail02 = ""
+
+//- CREDITS
+-let credit01 = "Copyright — PPOffice 2019."
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Justice nulle part" 
+-let contentService11 = "Experimental short movie & sound design"
+-let contentService12 = "Co-directed by Tasio Bidegain & Pierre Dufresne."
+-let contentService13 = "Duration : 3'13."
+//- DETAIL02
+-let titleService02 = "Exhibition journal" 
+-let contentService21 = "Printing Process : Inkjet printing"
+-let contentService22 = "Size : 280×405 mm | 50 copies."
+
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/tunica.html"
+-let nextProject = ""
+
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- Evangiles video teaser
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail01}
+                        video(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
+                            source(src="/public/img/evangiles/evangiles-video.mp4" type="video/mp4")
+                            source(src="/public/img/evangiles/evangiles-video.webm" type="video/webm")
+                            p #{imageDetail01}
+                    //- Evangiles IMG 1
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-12-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-12-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-12-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-12-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-12-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-12-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-12-1920.jpg", alt=imageDetail02)
+                    //- Evangiles IMG 2
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-01-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-01-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-01-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-01-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-01-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-01-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-01-1920.jpg", alt=imageDetail03)
+                    //- Evangiles IMG 3
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-02-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-02-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-02-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-02-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-02-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-02-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-02-1920.jpg", alt=imageDetail04)
+                    //- Evangiles IMG 4
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail05}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-03-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-03-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-03-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-03-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-03-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-03-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-03-1920.jpg", alt=imageDetail05) 
+                    //- Evangiles IMG 5
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail06}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-07-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-07-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-07-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-07-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-07-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-07-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-07-1920.jpg", alt=imageDetail06)
+                    //- Evangiles IMG 6
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail07}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-04-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-04-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-04-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-04-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-04-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-04-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-04-1920.jpg", alt=imageDetail07)
+                    //- Evangiles IMG 7
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail08}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-05-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-05-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-05-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-05-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-05-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-05-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-05-1920.jpg", alt=imageDetail08)
+                    //- Evangiles IMG 8
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail09}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-08-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-08-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-08-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-08-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-08-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-08-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-08-1920.jpg", alt=imageDetail09)
+                    //- Evangiles IMG 9
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail10}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-06-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-06-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-06-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-06-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-06-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-06-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-06-1920.jpg", alt=imageDetail10)
+                    //- Evangiles IMG 10
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail11}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-10-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-10-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-10-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-10-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-10-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-10-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-10-1920.jpg", alt=imageDetail11)
+                    //- Evangiles IMG 11
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail12}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-09-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-09-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-09-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-09-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-09-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-09-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-09-1920.jpg", alt=imageDetail12)
+                    //- Evangiles IMG 12
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail13}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/evangiles/evangiles-13-1152.webp 1152w,\
+                                /public/img/evangiles/evangiles-13-1440.webp 1440w,\
+                                /public/img/evangiles/evangiles-13-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/evangiles/evangiles-13-1152.jpg 1152w,\
+                                /public/img/evangiles/evangiles-13-1440.jpg 1440w,\
+                                /public/img/evangiles/evangiles-13-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/evangiles/evangiles-13-1920.jpg", alt=imageDetail13)
+
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+                                span #{service02}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__itemVisual Evangiles is a one-channel experimental video installation created by Tasio Bidegain alongside artist and designer Pierre Dufresne from the Panama Papers Office. <br /> This black-and-white video sets a mysterious and uncomfortable atmosphere as crude shots of Paris’ underground world unfold on the screen. Filmed and edited by the duo, the video depicts several short scenes linking up together in a mosaic of images portraying the visual manifestations of injustice in Paris as witnessed by them.                   
+                            p.a-text_project__itemVisual Derangement and fascination emanate from the images as they unfold. From burning cars to cryptic images of police control and testimonies of migrants, the picture of the city of lights painted by the artists avoids clichés to give a raw insight on the invisible forces that control the city. Giving a place to the unseen and underlaying scenes and bodies that make this capital city so unique is at the heart of the this short experimental film.                  
+                            p.a-text_project__itemVisual Throughout the 3’13” runtime of the movie, the rhythm of the sequences accelerate in a turmoil of violence and frustration, the ambiguity of the images leaves no room for simplistic interpretations: cops and criminals are altogether in world in which justice is nowhere to be found. This work was made on the occasion of the Uncut Festival at Stedelijk Museum.                  
+
+                        //- External Website
+                        .scrollmenu.scroll_horizontal
+                            #list_services_still
+                                span External links : 
+                            #list_services_justify.external_links
+                                a.highlight__link(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                                a.highlight__link(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+
+                        //- Copyright      
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService11}
+                                        p.content-service #{contentService12}
+                                //- Service 02
+                                ul.service
+                                    li.number-service 02
+                                    li.infos-service
+                                        h4.title-service #{titleService02}
+                                        p.content-service #{contentService21}
+                                        p.content-service #{contentService22}
+                    
+                    //- Next previous project
+                    section.o-navigation_buttons
+                        ul.m-navigation_buttons
+                            a#colLeft.a-navigation_buttons._slideHover(href=previousProject) Previous project 
+                            li.a-navigation_buttons 
+
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

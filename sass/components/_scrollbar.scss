@@ -1,0 +1,36 @@
+/*::-webkit-scrollbar {
+  width: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000 !important;
+  background: linear-gradient(0deg, rgb(219, 219, 219) 0%, rgb(31, 31, 31) 50%) !important;
+  border-radius: 0;
+}
+*/
+
+html {
+  /* For Firefox */
+  overflow-y: scroll;
+  scrollbar-color: #5c5c5c #30303000;
+  scrollbar-width: thin;
+}
+
+/* For Chrome and other browsers except Firefox */
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #999999;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.m-pageSplit_projectRight__wrapper {
+  overflow-y: hidden !important;
+}

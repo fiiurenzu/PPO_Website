@@ -1,0 +1,840 @@
+//- IMAGE DETAILS
+-let imageDetail01 = "_3x7 m banners : full view"
+-let imageDetail02 = "_poster series 1 & 2 : display, 40×60 cm"
+-let videoDetail03 = "_video announcement : led screen layout"
+-let imageDetail03 = "_poster series 2 : display, 120×176 cm"
+-let imageDetail04 = "_poster series 1 : display, 120×176 cm"
+-let imageDetail05 = "_3x7 m banners : detail"
+-let imageDetail06 = "_poster series 1 : display, 120×176 cm"
+-let videoDetail07 = "_typographic system : motion design"
+-let imageDetail07 = "_3x7 m banners : detail"
+-let imageDetail08 = "_postcard series : image design, detail"
+-let imageDetail09 = "_postcard series : image design, detail"
+-let imageDetail10 = "_postcard series : graphic design, detail"
+-let imageDetail11 = "_postcard series : image design, detail"
+-let imageDetail12 = "_featured image : local newspaper"
+-let imageDetail13 = "_exterior signage : Full view"
+-let imageDetail14 = "_exterior signage : detail"
+-let imageDetail15 = "_booklet : exhibit hall plan"
+-let imageDetail16 = "_exterior signage : detail"
+-let imageDetail17 = "_interior signage : detail"
+-let imageDetail18 = "_booklet : two-page spread, detail"
+-let imageDetail19 = "_interior signage : video clip"
+-let imageDetail20 = "_booklet (back cover) & invitation card series"
+-let imageDetail21 = "_exterior signage : detail"
+-let imageDetail22 = "_booklet (front cover) & invitation card series"
+-let imageDetail23 = "_interior signage : video clip"
+-let imageDetail24 = "_interior signage"
+-let videoDetail25 = "_1st video clip annoucement"
+
+//- PROJECT INFORMATION
+-let clientName = "Refresh"
+-let catName = "Contemporary art Program"
+-let labelProject = "RE-CAP-21"
+-let localisationProject = "Paimpol, France 🇫🇷"
+-let dateProject = "2021"
+
+//- SERVICES
+-let service01 = "Art direction,"
+-let service02 = "Visual & sound identity"
+
+//- EXTERNAL LINKS
+-let link01 = "https://www.refresh.bzh/"
+-let link02 = "https://www.instagram.com/refresh.bzh/"
+//- LINK DETAILS 
+-let linkDetail01 = "Refresh.bzh"
+-let linkDetail02 = "Instagram"
+
+//- CREDITS
+-let credit01 = "Copyright — PPOffice 2021."
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Video clip annoucement" 
+-let contentService11 = "AI-generated video clip"
+-let contentService12 = "Duration : 4'00."
+//- DETAIL02
+-let titleService02 = "Postcards" 
+-let contentService21 = "Printing Process : Risography (3 colors & black)"
+-let contentService22 = "Dimensions : 10×15 cm | 20 models | 50 copies each."
+//- DETAIL03
+-let titleService03 = "Opening Invitation Cards" 
+-let contentService31 = "Printing Process : Risography (3 colors & black)"
+-let contentService32 = "Dimensions : 10×15 cm | 2 model | 300 copies each."
+//- DETAIL04
+-let titleService04 = "future-proof Poster Series 1" 
+-let contentService41 = "Printing Process : Offset (black) & Offset (4 colors)"
+-let contentService42 = "Dimensions : 40×60 cm | 2 models | 500 copies each."
+//- DETAIL05
+-let titleService05 = "future-proof Poster Series 2" 
+-let contentService51 = "Printing Process : Offset (black) & Offset (4 colors)"
+-let contentService52 = "Dimensions : 40×60 cm | 2 models | 500 copies each."
+//- DETAIL06
+-let titleService06 = "Banners" 
+-let contentService61 = "Printing Process : Digital (Black)"
+-let contentService62 = "Dimensions : 280×680 cm | 2 models | 1 copy each."
+//- DETAIL07
+-let titleService07 = "Opening Video Annoucement" 
+-let contentService71 = "One-Chanel | Municipal LED screen layout"
+-let contentService72 = "Duration : 30 seconds."
+//- DETAIL08
+-let titleService08 = "Exterior Signage" 
+-let contentService81 = "Printing Process : Digital print (black) on frosted films"
+-let contentService82 = "Dimensions : 101×258 cm | 3 models | 1 copy each."
+//- DETAIL09
+-let titleService09 = "Interior Signage" 
+-let contentService91 = "Printing Process : Digital print (black) on frosted films"
+-let contentService92 = "Dimensions : 64×124 cm | 2 models | 1 copy each."
+//- DETAIL10
+-let titleService10 = "Interior Signage - Video clip" 
+-let contentService101 = "Video 4K & sound | 110 inches screen layout"
+-let contentService102 = "Duration : 4 min."
+//- DETAIL11
+-let titleService11 = "Exhibit Hall plan & booklet" 
+-let contentService111 = "Printing Process : Offset (Black)"
+-let contentService112 = "Dimensions : 14,8×21 cm | 500 copies."
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/atlante.html"
+-let nextProject = "/hyperpavilion.html"
+
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- IMG Refresh 01
+                    section.m-image__wrapper
+                        span.a-image__description__item #{imageDetail01}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-01-1152.webp 1152w,\
+                                /public/img/refresh/refresh-01-1440.webp 1440w,\
+                                /public/img/refresh/refresh-01-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-01-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-01-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-01-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-01-1920.jpg", alt=imageDetail01)
+                    //- IMG - Refresh 02
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-02-1152.webp 1152w,\
+                                /public/img/refresh/refresh-02-1440.webp 1440w,\
+                                /public/img/refresh/refresh-02-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-02-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-02-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-02-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-02-1920.jpg", alt=imageDetail02)
+                    //- VIDEO - Refresh 01
+                    section.m-image__wrapper
+                        span.a-image__description__item _video announcement — led screen layout
+                        video(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
+                            source(src="/public/img/refresh/refresh-03-video.mp4" type="video/mp4")
+                            source(src="/public/img/refresh/refresh-03-video.webm" type="video/webm")
+                    //- IMG - Refresh 03
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-03-1152.webp 1152w,\
+                                /public/img/refresh/refresh-03-1440.webp 1440w,\
+                                /public/img/refresh/refresh-03-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-03-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-03-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-03-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-03-1920.jpg", alt=imageDetail03) 
+                    //- IMG - Refresh 04
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-04-1152.webp 1152w,\
+                                /public/img/refresh/refresh-04-1440.webp 1440w,\
+                                /public/img/refresh/refresh-04-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-04-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-04-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-04-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-04-1920.jpg", alt=imageDetail04)
+                    //- IMG - Refresh 05
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail05}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-05-1152.webp 1152w,\
+                                /public/img/refresh/refresh-05-1440.webp 1440w,\
+                                /public/img/refresh/refresh-05-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-05-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-05-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-05-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-05-1920.jpg", alt=imageDetail05)
+                    //- IMG - Refresh 06
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail06}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-06-1152.webp 1152w,\
+                                /public/img/refresh/refresh-06-1440.webp 1440w,\
+                                /public/img/refresh/refresh-06-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-06-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-06-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-06-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-06-1920.jpg", alt=imageDetail06)
+                    //- VIDEO - Refresh 02
+                    section.m-image__wrapper
+                        span.a-image__description__item _typographic system : motion design
+                        video(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
+                            source(src="/public/img/refresh/refresh-07-b-video.mp4" type="video/mp4")
+                            source(src="/public/img/refresh/refresh-07-b-video.webm" type="video/webm")
+                    //- IMG - Refresh 07
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail07}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-07-1152.webp 1152w,\
+                                /public/img/refresh/refresh-07-1440.webp 1440w,\
+                                /public/img/refresh/refresh-07-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-07-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-07-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-07-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-07-1920.jpg", alt=imageDetail07)
+                    //- IMG - Refresh 08
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail08}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-08-1152.webp 1152w,\
+                                /public/img/refresh/refresh-08-1440.webp 1440w,\
+                                /public/img/refresh/refresh-08-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-08-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-08-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-08-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-08-1920.jpg", alt=imageDetail08)
+                    //- IMG - Refresh 09
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail09}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-09-1152.webp 1152w,\
+                                /public/img/refresh/refresh-09-1440.webp 1440w,\
+                                /public/img/refresh/refresh-09-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-09-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-09-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-09-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-09-1920.jpg", alt=imageDetail09)
+                    //- IMG - Refresh 10
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail10}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-10-1152.webp 1152w,\
+                                /public/img/refresh/refresh-10-1440.webp 1440w,\
+                                /public/img/refresh/refresh-10-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-10-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-10-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-10-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-10-1920.jpg", alt=imageDetail10)
+                    //- IMG - Refresh 11
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail11}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-11-1152.webp 1152w,\
+                                /public/img/refresh/refresh-11-1440.webp 1440w,\
+                                /public/img/refresh/refresh-11-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-11-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-11-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-11-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-11-1920.jpg", alt=imageDetail11)
+                    //- IMG - Refresh 12
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail12}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-12-1152.webp 1152w,\
+                                /public/img/refresh/refresh-12-1440.webp 1440w,\
+                                /public/img/refresh/refresh-12-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-12-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-12-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-12-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-12-1920.jpg", alt=imageDetail12)
+                    //- IMG - Refresh 13
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail13}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-13-1152.webp 1152w,\
+                                /public/img/refresh/refresh-13-1440.webp 1440w,\
+                                /public/img/refresh/refresh-13-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-13-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-13-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-13-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-13-1920.jpg", alt=imageDetail13)
+                    //- IMG - Refresh 14
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail14}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-14-1152.webp 1152w,\
+                                /public/img/refresh/refresh-14-1440.webp 1440w,\
+                                /public/img/refresh/refresh-14-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-14-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-14-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-14-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-14-1920.jpg", alt=imageDetail14)
+                    //- IMG - Refresh 15
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail15}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-15-1152.webp 1152w,\
+                                /public/img/refresh/refresh-15-1440.webp 1440w,\
+                                /public/img/refresh/refresh-15-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-15-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-15-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-15-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-15-1920.jpg", alt=imageDetail15)
+                    //- IMG - Refresh 16
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail16}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-16-1152.webp 1152w,\
+                                /public/img/refresh/refresh-16-1440.webp 1440w,\
+                                /public/img/refresh/refresh-16-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-16-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-16-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-16-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-16-1920.jpg", alt=imageDetail16)
+                    //- IMG - Refresh 17
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail17}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-17-1152.webp 1152w,\
+                                /public/img/refresh/refresh-17-1440.webp 1440w,\
+                                /public/img/refresh/refresh-17-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-17-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-17-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-17-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-17-1920.jpg", alt=imageDetail17)
+                    //- IMG - Refresh 18
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail18}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-18-1152.webp 1152w,\
+                                /public/img/refresh/refresh-18-1440.webp 1440w,\
+                                /public/img/refresh/refresh-18-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-18-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-18-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-18-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-18-1920.jpg", alt=imageDetail18)
+                    //- IMG - Refresh 19
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail19}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-19-1152.webp 1152w,\
+                                /public/img/refresh/refresh-19-1440.webp 1440w,\
+                                /public/img/refresh/refresh-19-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-19-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-19-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-19-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-19-1920.jpg", alt=imageDetail19)
+                    //- IMG - Refresh 20
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail20}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-20-1152.webp 1152w,\
+                                /public/img/refresh/refresh-20-1440.webp 1440w,\
+                                /public/img/refresh/refresh-20-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-20-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-20-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-20-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-20-1920.jpg", alt=imageDetail20)
+                    //- IMG - Refresh 21
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail21}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-21-1152.webp 1152w,\
+                                /public/img/refresh/refresh-21-1440.webp 1440w,\
+                                /public/img/refresh/refresh-21-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-21-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-21-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-21-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-21-1920.jpg", alt=imageDetail21)
+                    //- IMG - Refresh 22
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail22}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-22-1152.webp 1152w,\
+                                /public/img/refresh/refresh-22-1440.webp 1440w,\
+                                /public/img/refresh/refresh-22-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-22-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-22-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-22-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-22-1920.jpg", alt=imageDetail22)
+                    //- IMG - Refresh 23
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail23}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-23-1152.webp 1152w,\
+                                /public/img/refresh/refresh-23-1440.webp 1440w,\
+                                /public/img/refresh/refresh-23-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-23-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-23-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-23-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-23-1920.jpg", alt=imageDetail23)
+                    //- IMG - Refresh 24
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail24}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/refresh/refresh-24-1152.webp 1152w,\
+                                /public/img/refresh/refresh-24-1440.webp 1440w,\
+                                /public/img/refresh/refresh-24-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/refresh/refresh-24-1152.jpg 1152w,\
+                                /public/img/refresh/refresh-24-1440.jpg 1440w,\
+                                /public/img/refresh/refresh-24-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-24-1920.jpg", alt=imageDetail24)
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+                                span #{service02}
+                                span #{service03}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__itemVisual In one of the studio’s recent projects, the core team have turned their focus onto the Refresh programme to define the Art direction of its multimedia visual communication at the occasion of the first iteration from autumn 2021 to summer 2022. Refresh is an experience-oriented and post-digital programme that invites the generation of digital native artists to present artwork on the topic of the digital world, ecosystems and the future of the biosphere. With its two episodes released in October this year and April 2022, the programme will see numerous group shows in several unused public works offices, an outdoor hybrid artistic path featuring physical, augmented reality pieces and a contemporary art award. The first exhibition is titled Future-Proof and aims to question the current overlapping tangle of technological and human structures. It’s a speculative look at the anthropocene and its fragility, so to emphasise the urgency of the future of our environment, the studio has devised an organic inspired, site-specific visual communication that places technology and uncertainty together.
+                            p.a-text_project__item  This multi-media identity, achieved by working with an AI model at different stages in the project, works as a printed image, a moving image and a sound creation. The studio started the design process by making several trips to the location of the event and documenting the very specific landscapes and soundscapes of the « Côtes d’Armor » department (French Brittany). Using this sound and image databases, PPOffice created a wide range of elements using different mediums and techniques in order to create a sensorial identity to this event. These elements were made by collaborating with friends and colleagues and include symbol-based and typographic systems, still and moving images using machine learning technology as well as ambiant soundtracks.
+                            p.a-text_project__item The studio has been assisted by :
+                            div.collaboratorGroup
+                                div.collaborator
+                                    a.collaboratorLink.highlight__link(href="https://www.instagram.com/etienne.clerc/?hl=fr" target="_blank", rel="noreferrer noopener") Étienne Clerc
+                                    span.collaboratorDetail  — Associate art director,  
+                                div.collaborator
+                                    a.collaboratorLink.highlight__link(href="http://marcelmrejen.fr/" target="_blank", rel="noreferrer noopener") MM
+                                    span.collaboratorDetail  — Creative & AI coding, 
+                                div.collaborator
+                                    a.collaboratorLink.highlight__link(href="https://www.instagram.com/_stalingraddj/" target="_blank", rel="noreferrer noopener") Pablo Galera
+                                    span.collaboratorDetail  — Sound design, 
+                                div.collaborator
+                                    a.collaboratorLink.highlight__link(href="https://www.instagram.com/nam_borgers/?hl=fr" target="_blank", rel="noreferrer noopener") Nam Borgers
+                                    span.collaboratorDetail  — Motion design, 
+                                div.collaborator
+                                    a.collaboratorLink.highlight__link(href="https://www.louplopez.com/" target="_blank", rel="noreferrer noopener") Loup Lopez
+                                    span.collaboratorDetail  — Typeface ressource.
+                            
+
+                        //- External Website
+                        .scrollmenu.scroll_horizontal
+                            #list_services_still
+                                span External links : 
+                            #list_services_justify.external_links
+                                a.highlight__link.margin-right(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                                a.highlight__link.margin-right(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+                                a#onlineExp(href=linkDp target="_blank" rel="noreferrer noopener") #{linkDetail03}
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService11}
+                                        p.content-service #{contentService12}
+                                //- Service 02
+                                ul.service
+                                    li.number-service 02
+                                    li.infos-service
+                                        h4.title-service #{titleService02}
+                                        p.content-service #{contentService21}
+                                        p.content-service #{contentService22}
+                                //- Service 03
+                                ul.service
+                                    li.number-service 03
+                                    li.infos-service
+                                        h4.title-service #{titleService03}
+                                        p.content-service #{contentService31}
+                                        p.content-service #{contentService32}
+                                //- Service 04
+                                ul.service
+                                    li.number-service 04
+                                    li.infos-service
+                                        h4.title-service #{titleService04}
+                                        p.content-service #{contentService41}
+                                        p.content-service #{contentService42}
+                                //- Service 05
+                                ul.service
+                                    li.number-service 05
+                                    li.infos-service
+                                        h4.title-service #{titleService05}
+                                        p.content-service #{contentService51}
+                                        p.content-service #{contentService52}
+                                //- Service 06
+                                ul.service
+                                    li.number-service 06
+                                    li.infos-service
+                                        h4.title-service #{titleService06}
+                                        p.content-service #{contentService61}
+                                        p.content-service #{contentService62}
+                                //- Service 07
+                                ul.service
+                                    li.number-service 07
+                                    li.infos-service
+                                        h4.title-service #{titleService07}
+                                        p.content-service #{contentService71}
+                                        p.content-service #{contentService72}
+                                //- Service 08
+                                ul.service
+                                    li.number-service 08
+                                    li.infos-service
+                                        h4.title-service #{titleService08}
+                                        p.content-service #{contentService81}
+                                        p.content-service #{contentService82}
+                                //- Service 09
+                                ul.service
+                                    li.number-service 09
+                                    li.infos-service
+                                        h4.title-service #{titleService09}
+                                        p.content-service #{contentService91}
+                                        p.content-service #{contentService92}
+                                //- Service 10
+                                ul.service
+                                    li.number-service 10
+                                    li.infos-service
+                                        h4.title-service #{titleService10}
+                                        p.content-service #{contentService101}
+                                        p.content-service #{contentService102}
+                                //- Service 11
+                                ul.service
+                                    li.number-service 11
+                                    li.infos-service
+                                        h4.title-service #{titleService11}
+                                        p.content-service #{contentService111}
+                                        p.content-service #{contentService112}
+                    
+                    //- Next previous project
+                    include includes/next-previous-container
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

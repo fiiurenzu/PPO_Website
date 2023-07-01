@@ -1,0 +1,69 @@
+/**
+ * = 01 - BOUTON DE NAV PREVIOUS NEXT
+ * ------------------------------------------------------------------------- */
+.o-navigation_buttons {
+  @include media(">=desktop") {
+    width: 50%;
+    background-color: $second;
+    position: fixed;
+    bottom: 29px;
+    padding-right: $pad-L-R;
+    padding-bottom: $pad-T-B;
+  }
+}
+.m-navigation_buttons {
+  @include index_container-style;
+  display: flex;
+  border-top: $border;
+  border-bottom: none;
+  :nth-child(n + 2) {
+    border-right: none;
+  }
+}
+
+// Margin left de 3,5 rem pour faire un espace blanc
+#colLeft {
+  margin-left: $col;
+  border-left: 1px solid #000;
+  height: auto;
+  @include media("<=tablet") {
+    margin-left: 0;
+    border-left: none;
+  }
+}
+
+.a-navigation_buttons {
+  padding: $pad-T-B $pad-L-R;
+  border-right: $border;
+  flex-grow: 1;
+  display: block;
+  > a {
+    display: block;
+    box-sizing: content-box;
+  }
+}
+
+// Rendre le lien clickable sur la meme taille que la div li
+.o-navigation_buttons > .m-navigation_buttons > .a-navigation_buttons {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.o-navigation_buttons > .m-navigation_buttons > .a-navigation_buttons > a {
+  display: block;
+}
+
+// Slide du background noir sur fond blanc en hover
+._slideHover {
+  @include button-slide-right; //ETAT DU SLIDE AVT HOVER
+  @include media("<=tablet") {
+    &:active {
+      @include button-slide-right--hover; // ETAT PENDANT HOVER
+    }
+  }
+  @include media(">tablet") {
+    &:hover {
+      @include button-slide-right--hover; // ETAT PENDANT HOVER
+    }
+  }
+}

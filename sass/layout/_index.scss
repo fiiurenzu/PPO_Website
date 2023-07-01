@@ -1,0 +1,16 @@
+/**
+ * = 01 - INDEX DES PARTIES : CONTACT, PROJECT ETC.
+ * ------------------------------------------------------------------------- */
+.m-index_heading__wrapper {
+  @include index_container-style;
+}
+
+.a-index_heading__item {
+  padding: $pad-T-B $pad-L-R;
+  &:first-child {
+    margin-left: $col;
+  }
+}
+.heading--border_left {
+  border-left: $border;
+}

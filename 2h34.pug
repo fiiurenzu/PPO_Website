@@ -1,0 +1,474 @@
+//- IMAGE DETAILS
+-let imageDetail01 = "_book binding : detail"
+-let imageDetail02 = "_footages : full view 01"
+-let imageDetail03 = "_footages : detail 01"
+-let imageDetail04 = "_footages : full view 02"
+-let imageDetail05 = "_footages : detail 02"
+-let imageDetail06 = "_footages : full view 03"
+-let imageDetail07 = "_footages : detail 03"
+-let imageDetail08 = "_footages : full view 04"
+-let imageDetail09 = "_footages : detail 04"
+-let imageDetail10 = "_footages : full view 05"
+-let imageDetail11 = "_footages : full view 06"
+-let imageDetail12 = "_footages : full view 07"
+-let imageDetail13 = "_footages : full view 08"
+-let imageDetail14 = "_footages : full view 09"
+-let imageDetail15 = "_footages : full view 10"
+
+//- PROJECT INFORMATION
+-let clientName = "Self-Initiated Project"
+-let catName = "Fine Art Publication"
+-let labelProject = "PPO-FAP-19"
+-let localisationProject = "Paris, FR 🇫🇷"
+-let dateProject = "2019"
+
+//- SERVICES
+-let service01 = "Editorial concept,"
+-let service02 = "Photography direction,"
+-let service03 = "Book design."
+
+//- EXTERNAL LINKS
+-let link01 = ""
+-let link02 = ""
+
+//- LINK DETAILS 
+-let linkDetail01 = ""
+-let linkDetail02 = ""
+
+//- CREDITS
+-let credit01 = "Copyright —  PPOffice 2019."
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "2H34 : book" 
+-let contentService11 = "Printing Process : Digital print"
+-let contentService12 = "Size : 228×242 mm | 702 pages | Unique."
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/hotline.html"
+-let nextProject = "/adasokol.html"
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- IMG 2h34 01
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail01}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-16-1152.webp 1152w,\
+                                /public/img/2h34/2h34-16-1440.webp 1440w,\
+                                /public/img/2h34/2h34-16-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-16-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-16-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-16-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-16-1920.jpg", alt=imageDetail01)
+                    //- IMG - 2h34 02
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-01-1152.webp 1152w,\
+                                /public/img/2h34/2h34-01-1440.webp 1440w,\
+                                /public/img/2h34/2h34-01-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-01-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-01-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-01-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-01-1920.jpg", alt=imageDetail02)
+                    //- IMG - 2h34 03
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-02-1152.webp 1152w,\
+                                /public/img/2h34/2h34-02-1440.webp 1440w,\
+                                /public/img/2h34/2h34-02-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-02-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-02-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-02-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-02-1920.jpg", alt=imageDetail03) 
+                    //- IMG - 2h34 04
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-06-1152.webp 1152w,\
+                                /public/img/2h34/2h34-06-1440.webp 1440w,\
+                                /public/img/2h34/2h34-06-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-06-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-06-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-06-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-06-1920.jpg", alt=imageDetail04)
+                    //- IMG - 2h34 05
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail05}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-03-1152.webp 1152w,\
+                                /public/img/2h34/2h34-03-1440.webp 1440w,\
+                                /public/img/2h34/2h34-03-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-03-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-03-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-03-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-03-1920.jpg", alt=imageDetail05)
+                    //- IMG - 2h34 06
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail06}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-07-1152.webp 1152w,\
+                                /public/img/2h34/2h34-07-1440.webp 1440w,\
+                                /public/img/2h34/2h34-07-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-07-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-07-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-07-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-07-1920.jpg", alt=imageDetail06)
+                    //- IMG - 2h34 07
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail07}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-04-1152.webp 1152w,\
+                                /public/img/2h34/2h34-04-1440.webp 1440w,\
+                                /public/img/2h34/2h34-04-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-04-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-04-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-04-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-04-1920.jpg", alt=imageDetail07)
+                    //- IMG - 2h34 08
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail08}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-08-1152.webp 1152w,\
+                                /public/img/2h34/2h34-08-1440.webp 1440w,\
+                                /public/img/2h34/2h34-08-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-08-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-08-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-08-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-08-1920.jpg", alt=imageDetail08)
+                    //- IMG - 2h34 09
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail09}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-05-1152.webp 1152w,\
+                                /public/img/2h34/2h34-05-1440.webp 1440w,\
+                                /public/img/2h34/2h34-05-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-05-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-05-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-05-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-05-1920.jpg", alt=imageDetail09)
+                    //- IMG - 2h34 10
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail10}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-09-1152.webp 1152w,\
+                                /public/img/2h34/2h34-09-1440.webp 1440w,\
+                                /public/img/2h34/2h34-09-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-09-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-09-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-09-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-09-1920.jpg", alt=imageDetail10)
+                    //- IMG - 2h34 11
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail11}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-10-1152.webp 1152w,\
+                                /public/img/2h34/2h34-10-1440.webp 1440w,\
+                                /public/img/2h34/2h34-10-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-10-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-10-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-10-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-10-1920.jpg", alt=imageDetail11)
+                    //- IMG - 2h34 12
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail12}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-11-1152.webp 1152w,\
+                                /public/img/2h34/2h34-11-1440.webp 1440w,\
+                                /public/img/2h34/2h34-11-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-11-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-11-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-11-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-11-1920.jpg", alt=imageDetail12)
+                    //- IMG - 2h34 13
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail13}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-12-1152.webp 1152w,\
+                                /public/img/2h34/2h34-12-1440.webp 1440w,\
+                                /public/img/2h34/2h34-12-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-12-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-12-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-12-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-12-1920.jpg", alt=imageDetail13)
+                    //- IMG - 2h34 14
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail14}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-13-1152.webp 1152w,\
+                                /public/img/2h34/2h34-13-1440.webp 1440w,\
+                                /public/img/2h34/2h34-13-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-13-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-13-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-13-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-13-1920.jpg", alt=imageDetail14)
+                    //- IMG - 2h34 15
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail15}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/2h34/2h34-14-1152.webp 1152w,\
+                                /public/img/2h34/2h34-14-1440.webp 1440w,\
+                                /public/img/2h34/2h34-14-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/2h34/2h34-14-1152.jpg 1152w,\
+                                /public/img/2h34/2h34-14-1440.jpg 1440w,\
+                                /public/img/2h34/2h34-14-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/2h34/2h34-14-1920.jpg", alt=imageDetail15)
+
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+                                span #{service02}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__itemVisual This Research project explores the relationship & closeness we maintain with personal images as well as their abilities to interact and communicate with the outter world. We looked into the process of transforming daily-life pictures into universal images. In the context of constant photography spreading —brought by the massive use of social media platforms— our main purpose was to question the natural disposition the overflow of images tends to produce — a feeling of emptiness provoking the loss of sense facing the content. Simultaneously, we examined the border between fullness & vacuity and the relation they maintain, as opposite concepts.
+                            p.a-text_project__item  With this in mind, we designed a book presenting the entirety of the videos that one of our team member filmed during his summer trip. We translated the movie by screen shooting every seconds of each footages recorded at the time. Bound like an archiving material, this raw & meditative object gathering 9240 screenshots gives life to a compelling and universal narrative focusing on time, space and memory. The creation process of the book itself refers to research practice as we considered that manually screenshooting 9240 images was a form of performance.                   
+
+                        //- Copyright      
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService11}
+                                        p.content-service #{contentService12}
+                    
+                    //- Next previous project
+                    include includes/next-previous-container
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

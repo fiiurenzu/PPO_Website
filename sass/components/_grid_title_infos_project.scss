@@ -1,0 +1,91 @@
+.m-container_grid_client {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 65px 1fr auto;
+  border-top: $border;
+  border-bottom: $border;
+  line-height: $line-height-1 !important;
+  :nth-child(1) {
+    border-right: $border;
+  }
+  :last-child {
+    border-left: $border;
+  }
+
+  @include media("<=tablet") {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $second;
+    z-index: 9999;
+  }
+  @include media(">=desktop") {
+    position: relative;
+  }
+}
+// Affichage du container pour nom raccourcis
+#mobile {
+  display: none;
+  @include media("<tablet") {
+    display: block;
+  }
+}
+
+#desktop {
+  @include media("<tablet") {
+    display: none;
+  }
+}
+
+// container description
+.a-project_info__item {
+  padding: $pad-T-B $pad-L-R;
+  :nth-child(1) {
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+.m-container_grid_description {
+  display: grid;
+  grid-template-columns: 65px auto 60px auto;
+  border-bottom: $border;
+  line-height: $line-height-1 !important;
+  :nth-child(-n + 3) {
+    border-right: $border;
+  }
+  #countryFlagEmoji {
+    border-right: none;
+    padding-left: 5px;
+  }
+  @include media("<=tablet") {
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    margin-top: 33px;
+  }
+  @include media(">=desktop") {
+    margin-top: 0;
+  }
+}
+
+//container label
+.m-container_grid_label {
+  display: grid;
+  grid-template-columns: 65px auto;
+  border-bottom: $border;
+  line-height: $line-height-1 !important;
+  :nth-child(1) {
+    border-right: $border;
+  }
+}
+
+#returnHome {
+  padding-left: $pad-L-R;
+  padding-right: $pad-L-R;
+}
+.material-icons {
+  &:hover {
+    color: white;
+  }
+}

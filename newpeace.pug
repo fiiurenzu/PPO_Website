@@ -1,0 +1,535 @@
+//- IMAGE DETAILS
+-let videoDetail01 = "_teaser : opening"
+-let imageDetail01 = "_typeface : detail"
+-let imageDetail02 = "_tsq 01 : full view view"
+-let imageDetail03 = "_tsq 01 : detail"
+-let imageDetail04 = "_typeface : detail"
+-let imageDetail05 = "_tsq 02 : full view"
+-let imageDetail06 = "_tsq 02 : detail"
+-let imageDetail07 = "_typeface : detail"
+-let imageDetail08 = "_tsq 03 & 04 : full view"
+-let imageDetail09 = "_tsq 03 : detail"
+-let videoDetail02 = "_typeface overview"
+-let imageDetail10 = "_exhibition view"
+-let imageDetail11 = "_tsq 04 : detail"
+-let imageDetail12 = "_tsq 01 : full view"
+-let imageDetail13 = "_new Peace typeface : feature in A-Z typographic catalog"
+-let imageDetail14 = "_new Peace typeface : feature in A-Z typographic catalog"
+
+//- PROJECT INFORMATION
+-let clientName = "Timur Si-Qin & VonAmmon co"
+-let catName = "Solo Art Show"
+-let labelProject = "TSQ-SAS-20"
+-let localisationProject = "Washington DC, USA 🇺🇸"
+-let dateProject = "2020"
+
+//- SERVICES
+-let service01 = "Typographic direction,"
+-let service02 = "Graphic design,"
+-let service03 = "Design development"
+
+//- EXTERNAL LINKS
+-let link01 = "http://timursiqin.com/"
+-let link02 = "http://www.newpeace.faith/"
+-let link03 = "https://www.vonammon.co/"
+
+//- LINK DETAILS 
+-let linkDetail01 = "Timur Si-Qin"
+-let linkDetail02 = "New Peace"
+-let linkDetail03 = "Von Ammon Co"
+
+//- CREDITS
+-let credit01 = "Copyright —  Exhibition views at the courtesy of Timur Si-Qin Studio 2020 & Von Ammon Co gallery."
+
+//- ACCORDION DETAILS
+//- DETAIL01
+-let titleService01 = "Opening Asset" 
+-let contentService11 = "Video : Animation - CGI (Timur Si-Qin)"
+-let contentService12 = "Duration : 2'40."
+//- DETAIL02
+-let titleService02 = "Rio Rinquia Altar : Undivided Ground" 
+-let contentService21 = "Process : Etched & UV printed acrylic, LED light, ABS, enamel"
+-let contentService22 = "Size : 1810×700×530 mm | Unique."
+//- DETAIL03
+-let titleService03 = "Rio Rinquia Altar : Faith in pattern" 
+-let contentService31 = "Process : Etched & UV printed acrylic, LED light, ABS, enamel"
+-let contentService32 = "Size 1900×940×470 mm | Unique."
+//- DETAIL04
+-let titleService04 = "Rio Rinquia Altar : Pray to scale" 
+-let contentService41 = "Process : Etched & UV printed acrylic, hardware, LED light"
+-let contentService42 = "Size : 1540×740×45 mm | Unique."
+//- DETAIL05
+-let titleService05 = "Rio Rinquia Altar : Purpose from difference" 
+-let contentService51 = "Process : Etched & UV printed acrylic, hardware, LED light"
+-let contentService52 = "Size : 1540×740×45 mm | Unique."
+//- DETAIL06
+-let titleService06 = "New peace typeface in « A-Z »" 
+-let contentService61 = "Typographic catalog "
+-let contentService62 = "Size : 225×330 mm."
+-let contentService63 = "Printing Process : Offset (Fluorescent orange & Bronze) | Edition of 200 | Designed and published by Vrints-Kolstersen."
+
+//-NEXT PREVIOUS LINKS
+-let previousProject="/hyperpavilion.html"
+-let nextProject = "/hotline.html"
+
+
+//- DEBUT HTML
+doctype html
+html(lang='en')
+    head
+        include includes/meta
+        title PPOffice_#{clientName}
+    body
+        main.o-pageSplit__container
+                div.m-pageSplit_projectLeft__wrapper
+                    //- VIDEO - NP 01
+                    section.m-image__wrapper
+                        span.a-image__description__item #{videoDetail01}
+                        video(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
+                            source(src="/public/img/newpeace/newpeace-video-01.mp4" type="video/mp4")
+                            source(src="/public/img/newpeace/newpeace-video-01.webm" type="video/webm")
+                            p video : animation - opening exhibition
+                    //- IMG New Peace 01
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail01}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-14-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-14-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-14-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-14-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-14-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-14-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/publicnewpeace/newpeace-14-1920.jpg", alt=imageDetail01)
+                    //- IMG - New peace 02
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail02}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-05-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-05-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-05-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-05-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-05-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-05-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-05-1920.jpg", alt=imageDetail02)
+                    //- IMG - NP 03
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail03}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-06-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-06-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-06-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-06-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-06-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-06-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-06-1920.jpg", alt=imageDetail03) 
+                    //- IMG - NP 04
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail04}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-02-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-02-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-02-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-02-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-02-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-02-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-02-1920.jpg", alt=imageDetail04)
+                    //- IMG - NP 05
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail05}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-07-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-07-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-07-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-07-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-07-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-07-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-07-1920.jpg", alt=imageDetail05)
+                    //- IMG - NP 06
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail06}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-08-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-08-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-08-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-08-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-08-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-08-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-08-1920.jpg", alt=imageDetail06)
+                    //- IMG - NP 07
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail07}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-15-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-15-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-15-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-15-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-15-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-15-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-15-1920.jpg", alt=imageDetail07)
+                    //- IMG - NP 08
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail08}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-10-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-10-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-10-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-10-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-10-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-10-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-10-1920.jpg", alt=imageDetail08)
+                    //- IMG - NP 09
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail09}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-11-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-11-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-11-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-11-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-11-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-11-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-11-1920.jpg", alt=imageDetail09)
+                    //- VIDEO - NP 02
+                    section.m-image__wrapper
+                        span.a-image__description__item #{videoDetail02}
+                        video(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
+                            source(src="/public/img/newpeace/newpeace-video-02.mp4" type="video/mp4")
+                            source(src="/public/img/newpeace/newpeace-video-02.webm" type="video/webm")
+                            p video : font overview        
+                    //- IMG - NP 10
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail10}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-03-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-03-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-03-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-03-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-03-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-03-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-03-1920.jpg", alt=imageDetail10)
+                    //- IMG - NP 11
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail11}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-12-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-12-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-12-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-12-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-12-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-12-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/refresh/refresh-11-1920.jpg", alt=imageDetail11)
+                    //- IMG - NP 12
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail12}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-04-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-04-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-04-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-04-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-04-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-04-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-04-1920.jpg", alt=imageDetail12)
+                    //- IMG - NP 13
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail13}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-18-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-18-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-18-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-18-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-18-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-18-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-18-1920.jpg", alt=imageDetail13)
+                    //- IMG - NP 14
+                    section.m-image__wrapper.video-margin
+                        span.a-image__description__item #{imageDetail14}
+                        picture.a-projectImage__item
+                            source(
+                            type="image/webp"
+                            srcset="\
+                                /public/img/newpeace/newpeace-17-1152.webp 1152w,\
+                                /public/img/newpeace/newpeace-17-1440.webp 1440w,\
+                                /public/img/newpeace/newpeace-17-1920.webp 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            source(
+                            type="image/jpg"
+                            srcset="\
+                                /public/img/newpeace/newpeace-17-1152.jpg 1152w,\
+                                /public/img/newpeace/newpeace-17-1440.jpg 1440w,\
+                                /public/img/newpeace/newpeace-17-1920.jpg 1920w"
+                            sizes="\
+                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                            )
+                            img(src="/public/img/newpeace/newpeace-17-1920.jpg", alt=imageDetail14)
+                    //- footer mobile
+                    include includes/footer-mobile
+
+                //- Container Right 
+                div.m-pageSplit_projectRight__wrapper
+                    //- Information : client title area description
+                    //- Client
+                    section.m-container_grid_client
+                        div.a-project_info__item Client.
+                        h1.a-project_info__item #{clientName}
+                        a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
+
+                    //- Title projet
+                    section.m-container_grid_description#returnTop
+                        div.a-project_info__item Descr.
+                        div.a-project_info__item #{catName}
+                        div.a-project_info__item Area.
+                        div.a-project_info__item #{localisationProject}
+
+                    //- Title projet
+                    section.m-container_grid_label
+                        div.a-project_info__item Label.
+                        div.a-project_info__item #{labelProject}
+
+                    
+                    //- Container Project
+                    //- Textes projets
+                    section.m-text_project__container
+                        //- List Services
+                        .scrollmenu.scroll_horizontal#list_services
+                            #list_services_still 
+                                span Service(s) : 
+                            ul#list_services_justify
+                                span #{service01}
+                                span #{service02}
+                                span #{service03}
+
+                        //- TEXTE CONTENU\
+                        .m-text_project__wrapper
+                            p.a-text_project__itemVisual The studio collaborated with the international contemporary artist Timur Si-Qin for the occasion of his solo show <span id="exhibition">Take Me, I Love You</span> at the VonAmmon co gallery in Washington DC, USA. <br /> This full-scale show is the first of its kind in the United States, and features eleven new works by the artist. These works are a combination of 3d printed sculptures, computer-generated landscapes and branded graphics from the artist’s meta project : New Peace. New Peace is a proposal for a new form of spirituality in the face of global pandemics, climate change, and the collapsing of biodiversity.
+                            p.a-text_project__item  For this collaboration, our mission was to work on an unseen series of pieces presented for the occasion by the artist. Under Timur’s creative direction, we have wor­ked to define, develop & enrich the visual grammar and graphic line of "Edgelit", a collection of 4 sculptures/installations. These works of arts mix numerous printing and fabrication techniques such as 3D/UV print, Laser cut/engravings or LED lights systems. The first step of this process was to develop an exclusive new typeface that would fit Timur’s concept. We then assisted the artist designing and displaying the graphic elements on the 4 sculptures.
+                            p.a-text_project__item New Peace is an artwork in the form of a campaign to articulate a spirituality of symbiosis for the 21st century. New Peace comprises four modules or ideas : Undivided Ground (Immanence), Faith In Pattern (Emergence), Pray to Scale (Higher power) & Purpose From Difference (Contingency). These concepts are possible sources for imagining a contemporary spirituality today. The iconography of each source is represented in acrylic and 3d printed sculptures in the exhibition.                     
+
+                        //- External Website
+                        .scrollmenu.scroll_horizontal
+                            #list_services_still
+                                span External links : 
+                            #list_services_justify.external_links
+                                a.highlight__link.margin-right(href=link01 target="_blank", rel="noreferrer noopener") #{linkDetail01}
+                                a.highlight__link.margin-right(href=link02 target="_blank", rel="noreferrer noopener") #{linkDetail02}
+                                a.highlight__link(href=link03 target="_blank", rel="noreferrer noopener") #{linkDetail03}
+                                
+                        .o-parent__container
+                            #border-top 
+                            .copyright-image
+                                span ©
+                                span #{credit01}
+
+                    //- Accorddion details
+                    .o-details_accordion__container
+                        .m-details_accordion__wrapper
+                            button(type="button" class="accordion--services") Details
+                            .panel
+                                //- Service 01
+                                ul.service
+                                    li.number-service 01
+                                    li.infos-service
+                                        h4.title-service #{titleService01}
+                                        p.content-service #{contentService11}
+                                        p.content-service #{contentService12}
+                                //- Service 02
+                                ul.service
+                                    li.number-service 02
+                                    li.infos-service
+                                        h4.title-service #{titleService02}
+                                        p.content-service #{contentService21}
+                                        p.content-service #{contentService22}
+                                //- Service 03
+                                ul.service
+                                    li.number-service 03
+                                    li.infos-service
+                                        h4.title-service #{titleService03}
+                                        p.content-service #{contentService31}
+                                        p.content-service #{contentService32}
+                                //- Service 04
+                                ul.service
+                                    li.number-service 04
+                                    li.infos-service
+                                        h4.title-service #{titleService04}
+                                        p.content-service #{contentService41}
+                                        p.content-service #{contentService42}
+                                //- Service 05
+                                ul.service
+                                    li.number-service 05
+                                    li.infos-service
+                                        h4.title-service #{titleService05}
+                                        p.content-service #{contentService51}
+                                        p.content-service #{contentService52}
+                                //- Service 06
+                                ul.service
+                                    li.number-service 06
+                                    li.infos-service
+                                        h4.title-service #{titleService06}
+                                        p.content-service #{contentService61}
+                                        p.content-service #{contentService62}
+                                        p.content-service #{contentService63}
+                    
+                    //- Next previous project
+                    include includes/next-previous-container
+                    
+                    //-Footer Desktop
+                    include includes/footer-desktop-project
+
+        script(src="/js/accordion.js") 
+        

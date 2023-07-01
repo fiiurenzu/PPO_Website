@@ -1,0 +1,21 @@
+//- Liens collaborateurs dans paragraphe
+.collaboratorGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.collaborator {
+  padding-right: $pad-L-R;
+}
+
+.collaboratorLink {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+}
+.collaboratorDetail {
+  box-sizing: border-box;
+}

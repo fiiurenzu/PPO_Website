@@ -1,0 +1,51 @@
+/**
+ * = ANIMATION HOVER STYLE HIGHLIGHTS SUR LES LIENS 
+ *
+ * ------------------------------------------------------------------------- */
+
+.highlight__link {
+  background-color: none;
+  color: $first;
+  @include media(">=desktop") {
+    background-image: linear-gradient(to right, $second 50%, $first 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    color: $first;
+    transition: all 400ms ease-in;
+    &:hover {
+      background-position: -99.99% 0;
+      color: $second;
+    }
+  }
+}
+
+#onlineExp {
+  background-image: linear-gradient(to right, lime 50%, black 50%);
+  background-position: -0% 0;
+  background-size: 201% auto;
+  color: $first;
+  transition: all 400ms ease-in;
+  &:hover {
+    background-position: -99.99% 0;
+    color: lime;
+  }
+  @include media("<=tablet") {
+    background-color: lime;
+    color: $first;
+  }
+}
+
+.underline_animation {
+  background-image: linear-gradient(to right, #ffffff00 50%, #ffff 50%);
+  background-position: -0% 0;
+  background-size: 201% 1px;
+  color: $second;
+  transition: all 400ms ease-in;
+  &:hover {
+    background-position: -99.99% 0;
+    color: $second;
+  }
+  @include media("<=tablet") {
+    display: none;
+  }
+}
