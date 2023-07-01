@@ -490,7 +490,7 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0) 35%, black 65%) right;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 35%, rgb(0, 0, 0) 65%) right;
   background-size: 300%;
   transition: 0.5s ease-in-out;
   color: rgba(0, 0, 0, 0);
@@ -498,12 +498,12 @@ video {
 @media (max-width: 768px) {
   .image__overlay:active {
     background-position: left;
-    color: white;
+    color: rgb(255, 255, 255);
   }
 }
 .image__overlay:hover {
   background-position: left;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 @media (max-width: 768px) {
   .image__overlay {
@@ -553,25 +553,20 @@ video {
 }
 
 .infoBulle {
-  position: relative;
-  /*les .infoBulle deviennent référents*/
+  position: relative; /*les .infoBulle deviennent référents*/
   border-radius: 50%;
 }
 
 /* on génère un élément :after lors du survol et du focus :*/
 .infoBulle:hover:after,
 .infoBulle:focus:after {
-  content: attr(aria-label);
-  /* on affiche aria-label */
+  content: attr(aria-label); /* on affiche aria-label */
   position: absolute;
   top: -2.6em;
   left: 50%;
-  transform: translateX(-50%);
-  /* on centre horizontalement  */
-  z-index: 1;
-  /* pour s'afficher au dessus des éléments en position relative */
-  white-space: nowrap;
-  /* on interdit le retour à la ligne*/
+  transform: translateX(-50%); /* on centre horizontalement  */
+  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+  white-space: nowrap; /* on interdit le retour à la ligne*/
   padding: 5px 14px;
   background: black;
   color: white;
@@ -584,8 +579,7 @@ video {
   position: absolute;
   top: -1em;
   left: 50%;
-  transform: translateX(-50%);
-  /* on centre horizontalement  */
+  transform: translateX(-50%); /* on centre horizontalement  */
   color: black;
 }
 
@@ -621,14 +615,12 @@ video {
 .accordion--contribution:after,
 .accordion--exhibition:after,
 .accordion--services:after {
-  content: "+";
-  /* Unicode character for "plus" sign (+) */
+  content: "+"; /* Unicode character for "plus" sign (+) */
   float: right;
 }
 
 .active:after {
-  content: "-";
-  /* Unicode character for "minus" sign (-) */
+  content: "-"; /* Unicode character for "minus" sign (-) */
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -701,7 +693,7 @@ video {
 }
 
 .underline_animation {
-  background-image: linear-gradient(to right, #ffffff00 50%, #ffff 50%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, white 50%);
   background-position: 0% 0;
   background-size: 201% 1px;
   color: white;
@@ -820,14 +812,14 @@ video {
 html {
   /* For Firefox */
   overflow-y: scroll;
-  scrollbar-color: #5c5c5c #30303000;
+  scrollbar-color: #5c5c5c rgba(48, 48, 48, 0);
   scrollbar-width: thin;
 }
 
 /* For Chrome and other browsers except Firefox */
 ::-webkit-scrollbar {
   width: 0.5em;
-  background-color: #999999;
+  background-color: rgba(153, 153, 153, 0);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1053,7 +1045,7 @@ html {
 }
 @media (max-width: 1023px) {
   .o-footerHome__container,
-.o-footerProject__container {
+  .o-footerProject__container {
     display: none;
     padding-right: 0;
   }
