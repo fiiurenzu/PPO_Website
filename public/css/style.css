@@ -818,8 +818,13 @@ html {
 
 /* For Chrome and other browsers except Firefox */
 ::-webkit-scrollbar {
-  width: 0.5em;
-  background-color: rgba(153, 153, 153, 0);
+  width: 0.3em;
+  background: rgba(48, 48, 48, 0);
+  scrollbar-gutter: none;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(48, 48, 48, 0);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -884,14 +889,14 @@ html {
 
 .m-container_grid_description {
   display: grid;
-  grid-template-columns: 65px auto 60px auto;
+  grid-template-columns: 65px auto 60px auto 1fr 2fr;
   border-bottom: 1px solid black;
   line-height: 1rem !important;
 }
-.m-container_grid_description :nth-child(-n+3) {
+.m-container_grid_description :nth-child(-n+4) {
   border-right: 1px solid black;
 }
-.m-container_grid_description #countryFlagEmoji {
+.m-container_grid_description #countryFlag {
   border-right: none;
   padding-left: 5px;
 }
@@ -948,6 +953,62 @@ html {
 
 .collaboratorDetail {
   box-sizing: border-box;
+}
+
+.flagUK {
+  margin: 5px 10px;
+  background-size: contain;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/langfr-225px-Flag_of_the_United_Kingdom_%283-5%29.svg.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.flagFR {
+  margin: 5px 10px;
+  background-size: contain;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/langfr-1920px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.flagCH {
+  margin: 5px 10px;
+  background-size: contain;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/langfr-1280px-Flag_of_Switzerland_%28Pantone%29.svg.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.flagCO {
+  margin: 5px 10px;
+  background-size: contain;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Flag_of_Corsica.svg/langfr-2560px-Flag_of_Corsica.svg.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.flagBR {
+  margin: 5px 10px;
+  background-size: contain;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Gwenn_ha_Du_%2811_mouchetures%29.svg/langfr-1920px-Gwenn_ha_Du_%2811_mouchetures%29.svg.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.flagUS {
+  margin: 5px 10px;
+  background-size: contain;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/langfr-1920px-Flag_of_the_United_States.svg.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.flagNL {
+  margin: 5px 10px;
+  background-size: contain;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
 }
 
 /**
