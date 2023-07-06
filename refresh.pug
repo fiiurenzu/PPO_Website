@@ -31,7 +31,7 @@
 -let clientName = "Refresh"
 -let catName = "Contemporary art Program"
 -let labelProject = "RE-CAP-21"
--let localisationProject = "Paimpol, France 🇫🇷"
+-let localisationProject = "Paimpol, France"
 -let dateProject = "2021"
 
 //- SERVICES
@@ -673,6 +673,11 @@ html(lang='en')
                             (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
                             )
                             img(src="/public/img/refresh/refresh-24-1920.jpg", alt=imageDetail24)
+
+                    //- VIDEO - Refresh opening
+                    section.m-image__wrapper.video-margin
+                        iframe.iframe(src="https://player.vimeo.com/video/842579622?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
+                        script(src="https://player.vimeo.com/api/player.js")
                     //- footer mobile
                     include includes/footer-mobile
 
@@ -691,6 +696,8 @@ html(lang='en')
                         div.a-project_info__item #{catName}
                         div.a-project_info__item Area.
                         div.a-project_info__item #{localisationProject}
+                        div.a-project_info__item.flagBR 
+                        div.a-project_info__item 
 
                     //- Title projet
                     section.m-container_grid_label
