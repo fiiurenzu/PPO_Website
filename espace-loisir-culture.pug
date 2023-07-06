@@ -42,7 +42,7 @@
 -let contentService022 = "Dimensions : 120×176 cm" 
 
 //-NEXT PREVIOUS LINKS
--let previousProject=""
+-let previousProject="/black-cloud.html"
 -let nextProject = "/decompressed-prism.html"
 
 
@@ -352,7 +352,8 @@ html(lang='en')
                     div.a-project_info__item #{catName}
                     div.a-project_info__item Area.
                     div.a-project_info__item #{localisationProject}
-                        span#countryFlagEmoji #{countryFlag}
+                    div.a-project_info__item.flagFR 
+                    div.a-project_info__item
 
                 //- Title projet
                 section.m-container_grid_label
@@ -376,6 +377,7 @@ html(lang='en')
                     //- TEXTE CONTENU\
                     .m-text_project__wrapper
                         p.a-text_project__itemVisual The Espace Loisir Culture is an association founded in 1966 and located in Montmirail. A multi-disciplinary place of creation and production, the ELC associates live performance, dance, music cinema and linguistic and sports activities. The association addresses itself to the largest public, so that its activities are a popular tool of individual and collective elevation. It is a true place of artistic gathering, of cultural bubbling and of conviviality that mixes genres, and audiences, the association offers about fifty cultural and sports activities. The ELC also presents a cultural program. Conferences, festivals, productions of plays, dance shows and presentations are organized each season from September to June. The association is administered by a board of directors and is run by a team of by a team of 80 volunteers. It is recognized as being of general interest.
+                        p.a-text_project__itemVisual 2022/2023 Season program booklet & poster designed for Espace Loisir Culture, a non-profit organisation of the Grand-Est region in France.
 
                     //- External Website
                     .scrollmenu.scroll_horizontal
@@ -413,10 +415,7 @@ html(lang='en')
                                     p.content-service #{contentService022}
                 
                 //- Next previous project
-                section.o-navigation_buttons
-                    div.m-navigation_buttons
-                        div#colLeft.a-navigation_buttons
-                        a.a-navigation_buttons._slideHover(href=nextProject) Next project 
+                include includes/next-previous-container
 
                 //-Footer Desktop
                 include includes/footer-desktop-project
