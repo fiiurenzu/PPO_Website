@@ -3,6 +3,13 @@
   width: 100%;
   height: auto;
 }
+.m-video__wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
 .video-margin {
   margin-top: -4px;
 }
