@@ -10,8 +10,8 @@
 -let videoDetail01 = "_video opening"
 
 //- PROJECT INFORMATION
--let clientName = "Lawrence Lek"
--let clientNameMobile = "L.Lek"
+-let clientName = "Lawrence Lek & Sadie Cole HQ"
+-let clientNameMobile = "Lawrence Lek"
 -let catName = "Interactive Experience"
 -let labelProject = "LLEK-INEX-2023"
 -let localisationProject = "London, UK"
@@ -57,8 +57,24 @@ html(lang='en')
     body
         main.o-pageSplit__container
             .m-pageSplit_projectLeft__wrapper
+
+                //- VIDEO BCH 00 - 01
+                section.m-video__wrapper
+                    .m-video__item
+                        span.a-image__description__item #{videoDetail01}
+                        video(playsinline preload="auto" autoplay muted loop="1")
+                            source(src="/public/img/black-cloud/video_00.mp4" type="video/mp4")
+                            source(src="/public/img/black-cloud/video_00.webm" type="video/webm")
+                            p video : opening
+                    .m-video__item
+                        span.a-image__description__item #{videoDetail01}
+                        video(playsinline preload="auto" autoplay muted loop="1")
+                            source(src="/public/img/black-cloud/video_01.mp4" type="video/mp4")
+                            source(src="/public/img/black-cloud/video_01.webm" type="video/webm")
+                            p video : opening
+
                 //- IMG BCH 01
-                section.m-image__wrapper
+                section.m-image__wrapper.video-margin
                         span.a-image__description__item #{imageDetail01}
                         picture.a-projectImage__item
                             source(
@@ -81,8 +97,23 @@ html(lang='en')
                             )
                             img(src="/public/img/black-cloud/bch-01-1920.jpg", alt=imageDetail01)
 
+                //- VIDEO BCH 02 - 03
+                section.m-video__wrapper
+                    .m-video__item
+                        span.a-image__description__item #{videoDetail01}
+                        video(playsinline preload="auto" autoplay muted loop="1")
+                            source(src="/public/img/black-cloud/video_02.mp4" type="video/mp4")
+                            source(src="/public/img/black-cloud/video_02.webm" type="video/webm")
+                            p video : opening
+                    .m-video__item
+                        span.a-image__description__item #{videoDetail01}
+                        video(playsinline preload="auto" autoplay muted loop="1")
+                            source(src="/public/img/black-cloud/video_03.mp4" type="video/mp4")
+                            source(src="/public/img/black-cloud/video_03.webm" type="video/webm")
+                            p video : opening
+
                 //- IMG BCH 02
-                section.m-image__wrapper
+                section.m-image__wrapper.video-margin
                         span.a-image__description__item #{imageDetail02}
                         picture.a-projectImage__item
                             source(
@@ -105,8 +136,23 @@ html(lang='en')
                             )
                             img(src="/public/img/black-cloud/bch-02-1920.jpg", alt=imageDetail02)
 
+                //- VIDEO BCH 04 - 05
+                section.m-video__wrapper
+                    .m-video__item
+                        span.a-image__description__item #{videoDetail01}
+                        video(playsinline preload="auto" autoplay muted loop="1")
+                            source(src="/public/img/black-cloud/video_04.mp4" type="video/mp4")
+                            source(src="/public/img/black-cloud/video_04.webm" type="video/webm")
+                            p video : opening
+                    .m-video__item
+                        span.a-image__description__item #{videoDetail01}
+                        video(playsinline preload="auto" autoplay muted loop="1")
+                            source(src="/public/img/black-cloud/video_05.mp4" type="video/mp4")
+                            source(src="/public/img/black-cloud/video_05.webm" type="video/webm")
+                            p video : opening
+
                 //- IMG BCH 03
-                section.m-image__wrapper
+                section.m-image__wrapper.video-margin
                         span.a-image__description__item #{imageDetail03}
                         picture.a-projectImage__item
                             source(
@@ -129,8 +175,18 @@ html(lang='en')
                             )
                             img(src="/public/img/black-cloud/bch-03-1920.jpg", alt=imageDetail03)
 
+                //- VIDEO BCH 06
+                section.m-video__wrapper
+                    .m-video__item
+                        span.a-image__description__item #{videoDetail01}
+                        video(playsinline preload="auto" autoplay muted loop="1")
+                            source(src="/public/img/black-cloud/video_06.mp4" type="video/mp4")
+                            source(src="/public/img/black-cloud/video_06.webm" type="video/webm")
+                            p video : opening
+                    .m-video__item
+
                 //- IMG BCH 04
-                section.m-image__wrapper
+                section.m-image__wrapper.video-margin
                         span.a-image__description__item #{imageDetail04}
                         picture.a-projectImage__item
                             source(
@@ -224,62 +280,7 @@ html(lang='en')
                             (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
                             )
                             img(src="/public/img/black-cloud/bch-07-1920.jpg", alt=imageDetail07)
-                
-                //- VIDEO BCH 00
-                section.m-image__wrapper
-                    span.a-image__description__item #{videoDetail01}
-                    video(playsinline preload="auto" autoplay muted loop="1")
-                        source(src="/public/img/black-cloud/video_00.mp4" type="video/mp4")
-                        source(src="/public/img/black-cloud/video_00.webm" type="video/webm")
-                        p video : opening  
 
-                //- VIDEO BCH 01
-                section.m-image__wrapper
-                    span.a-image__description__item #{videoDetail01}
-                    video(playsinline preload="auto" autoplay muted loop="1")
-                        source(src="/public/img/black-cloud/video_01.mp4" type="video/mp4")
-                        source(src="/public/img/black-cloud/video_01.webm" type="video/webm")
-                        p video : opening
-
-                //- VIDEO BCH 02
-                section.m-image__wrapper
-                    span.a-image__description__item #{videoDetail01}
-                    video(playsinline preload="auto" autoplay muted loop="1")
-                        source(src="/public/img/black-cloud/video_02.mp4" type="video/mp4")
-                        source(src="/public/img/black-cloud/video_02.webm" type="video/webm")
-                        p video : opening
-
-                //- VIDEO BCH 03
-                section.m-image__wrapper
-                    span.a-image__description__item #{videoDetail01}
-                    video(playsinline preload="auto" autoplay muted loop="1")
-                        source(src="/public/img/black-cloud/video_03.mp4" type="video/mp4")
-                        source(src="/public/img/black-cloud/video_03.webm" type="video/webm")
-                        p video : opening
-
-                //- VIDEO BCH 04
-                section.m-image__wrapper
-                    span.a-image__description__item #{videoDetail01}
-                    video(playsinline preload="auto" autoplay muted loop="1")
-                        source(src="/public/img/black-cloud/video_04.mp4" type="video/mp4")
-                        source(src="/public/img/black-cloud/video_04.webm" type="video/webm")
-                        p video : opening
-
-                //- VIDEO BCH 05
-                section.m-image__wrapper
-                    span.a-image__description__item #{videoDetail01}
-                    video(playsinline preload="auto" autoplay muted loop="1")
-                        source(src="/public/img/black-cloud/video_05.mp4" type="video/mp4")
-                        source(src="/public/img/black-cloud/video_05.webm" type="video/webm")
-                        p video : opening
-
-                //- VIDEO BCH 06
-                section.m-image__wrapper
-                    span.a-image__description__item #{videoDetail01}
-                    video(playsinline preload="auto" autoplay muted loop="1")
-                        source(src="/public/img/black-cloud/video_06.mp4" type="video/mp4")
-                        source(src="/public/img/black-cloud/video_06.webm" type="video/webm")
-                        p video : opening
                 //- footer mobile
                 include includes/footer-mobile
 
