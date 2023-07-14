@@ -369,6 +369,13 @@ button {
   height: auto;
 }
 
+.m-video__wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
 .video-margin {
   margin-top: -4px;
 }
@@ -818,21 +825,24 @@ html {
 
 /* For Chrome and other browsers except Firefox */
 ::-webkit-scrollbar {
-  width: 0.3em;
-  background: rgba(48, 48, 48, 0);
-  scrollbar-gutter: none;
+  width: 0.5em;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(48, 48, 48, 0);
+  border-radius: 20px;
+  background: rgb(214, 213, 213);
+  background: radial-gradient(circle, rgb(114, 113, 113) 0%, rgb(24, 25, 26) 100%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  border-radius: 100px;
+  background: rgb(212, 212, 212);
+  cursor: grab !important;
 }
 
-.m-pageSplit_projectRight__wrapper {
-  overflow-y: hidden !important;
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(185, 154, 243);
 }
 
 .m-container_grid_client {
@@ -1368,8 +1378,9 @@ html {
     flex-direction: row;
     width: 50%;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
+    scrollbar-gutter: none;
     order: 1;
   }
 }
