@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: auto;
+  cursor: zoom-in;
 }
 .m-video__wrapper {
   position: relative;
@@ -10,7 +11,7 @@
   display: flex;
 }
 
-.video-margin {
+#video-margin {
   margin-top: -4px;
 }
 
@@ -41,4 +42,17 @@ video {
   aspect-ratio: 16 / 9;
   width: 100%;
   background-color: $first;
+}
+
+.fullscreen {
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  contain: cover;
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIJJREFUeNpiYGBg+I8Hf0KisQJGqAJiACM2QRZCCoix4D8JrgCBhUAciM0L6C7gAuIYIH4KxD+g8nJAPBcqrwPEV/G5QIFAAIOwIxMBrxECXPi8wAHEHkD8BIh/QtWBvLAVKm8GxKfJCcSpQOxLSizglWch0c8YgImA/Gc0GgMABBgAaiQu/TORGycAAAAASUVORK5CYII=),
+    pointer;
 }
