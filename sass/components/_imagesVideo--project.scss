@@ -54,6 +54,11 @@ video {
   width: 100%;
   background-color: $first;
 }
+.iframe-portait {
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  background-color: $first;
+}
 
 //div de taille fullscreen desktop
 .fullscreen {

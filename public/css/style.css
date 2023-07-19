@@ -424,6 +424,12 @@ video {
   background-color: black;
 }
 
+.iframe-portait {
+  aspect-ratio: 9/16;
+  width: 100%;
+  background-color: black;
+}
+
 @media (min-width: 1024px) {
   .fullscreen {
     border-color: black;
