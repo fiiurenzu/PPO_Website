@@ -47,15 +47,17 @@
             </video>
           </div>
         </section>
-        <section class="m-image__wrapper" id="video-margin" onclick="change(this)"><span class="a-image__description__item">_video announcement</span>
+        <section class="m-image__wrapper" id="video-margin"><span class="a-image__description__item">_video announcement</span>
           <picture class="a-projectImage__item">
-            <source type="image/webp" srcset="                                /public/img/black-cloud/bch-01-1152.webp 1152w,                                /public/img/black-cloud/bch-01-1440.webp 1440w,                                /public/img/black-cloud/bch-01-1920.webp 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw">
-            <source type="image/jpg" srcset="                                /public/img/black-cloud/bch-01-1152.jpg 1152w,                                /public/img/black-cloud/bch-01-1440.jpg 1440w,                                /public/img/black-cloud/bch-01-1920.jpg 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"><img src="/public/img/black-cloud/bch-01-1920.jpg" alt="_video announcement">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-01-400.webp 1x,                                        /public/img/black-cloud/bch-01-800.webp 2x,                                        /public/img/black-cloud/bch-01-800.webp 1x,                                        /public/img/black-cloud/bch-01-1600.webp 2x," type="image/webp">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-01-400.jpg 1x,                                        /public/img/black-cloud/bch-01-800.jpg 2x,                                        /public/img/black-cloud/bch-01-800.jpg 1x,                                        /public/img/black-cloud/bch-01-1600.jpg 2x," type="image/jpg">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-01-1920.webp 1x,                                        /public/img/black-cloud/bch-01-original.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-01-1920.jpg 1x,                                        /public/img/black-cloud/bch-01-original.jpg 2x" type="image/jpg"><img src="/public/img/black-cloud/bch-01-original.jpg" alt="_interactive experience : desktop version 1">
           </picture>
         </section>
         <section class="m-video__wrapper">
           <div class="m-video__item"><span class="a-image__description__item">_video opening</span>
-            <video playsinline preload="auto" autoplay muted loop="1">
+            <video id="ma-video" playsinline preload="auto" autoplay muted loop="1">
               <source src="/public/img/black-cloud/video_02.mp4" type="video/mp4">
               <source src="/public/img/black-cloud/video_02.webm" type="video/webm">
               <p>video : opening</p>
@@ -71,8 +73,18 @@
         </section>
         <section class="m-image__wrapper" id="video-margin" onclick="change(this)"><span class="a-image__description__item">_interactive experience : desktop version 1</span>
           <picture class="a-projectImage__item">
-            <source type="image/webp" srcset="                                /public/img/black-cloud/bch-02-1152.webp 1152w,                                /public/img/black-cloud/bch-02-1440.webp 1440w,                                /public/img/black-cloud/bch-02-1920.webp 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw">
-            <source type="image/jpg" srcset="                                /public/img/black-cloud/bch-02-1152.jpg 1152w,                                /public/img/black-cloud/bch-02-1440.jpg 1440w,                                /public/img/black-cloud/bch-02-1920.jpg 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"><img src="/public/img/black-cloud/bch-02-1920.jpg" alt="_interactive experience : desktop version 1">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-02-400.webp 1x,                                        /public/img/black-cloud/bch-02-800.webp 2x,                                        /public/img/black-cloud/bch-02-800.webp 1x,                                        /public/img/black-cloud/bch-02-1600.webp 2x," type="image/webp">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-02-400.jpg 1x,                                        /public/img/black-cloud/bch-02-800.jpg 2x,                                        /public/img/black-cloud/bch-02-800.jpg 1x,                                        /public/img/black-cloud/bch-02-1600.jpg 2x," type="image/jpg">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-02-1920.webp 1x,                                        /public/img/black-cloud/bch-02-original.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-02-1920.jpg 1x,                                        /public/img/black-cloud/bch-02-original.jpg 2x" type="image/jpg"><img src="/public/img/black-cloud/bch-02-original.jpg" alt="_interactive experience : desktop version 1">
+          </picture>
+        </section>
+        <section class="m-image__wrapper" onclick="change(this)"><span class="a-image__description__item">_landing page : mobile version</span>
+          <picture class="a-projectImage__item">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-03-400.webp 1x,                                        /public/img/black-cloud/bch-03-800.webp 2x,                                        /public/img/black-cloud/bch-03-800.webp 1x,                                        /public/img/black-cloud/bch-03-1600.webp 2x," type="image/webp">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-03-400.jpg 1x,                                        /public/img/black-cloud/bch-03-800.jpg 2x,                                        /public/img/black-cloud/bch-03-800.jpg 1x,                                        /public/img/black-cloud/bch-03-1600.jpg 2x," type="image/jpg">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-03-1920.webp 1x,                                        /public/img/black-cloud/bch-03-original.webp 2x," type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-03-1920.jpg 1x,                                        /public/img/black-cloud/bch-03-original.jpg 2x," type="image/jpg"><img src="/public/img/black-cloud/bch-03-original.jpg" alt="_interactive experience : desktop version 1">
           </picture>
         </section>
         <section class="m-video__wrapper">
@@ -91,34 +103,36 @@
             </video>
           </div>
         </section>
-        <section class="m-image__wrapper" id="video-margin" onclick="change(this)"><span class="a-image__description__item">_poster series : printed campaign</span>
+        <section class="m-image__wrapper" onclick="change(this)"><span class="a-image__description__item">_landing page : mobile version</span>
           <picture class="a-projectImage__item">
-            <source type="image/webp" srcset="                                /public/img/black-cloud/bch-03-1152.webp 1152w,                                /public/img/black-cloud/bch-03-1440.webp 1440w,                                /public/img/black-cloud/bch-03-1920.webp 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw">
-            <source type="image/jpg" srcset="                                /public/img/black-cloud/bch-03-1152.jpg 1152w,                                /public/img/black-cloud/bch-03-1440.jpg 1440w,                                /public/img/black-cloud/bch-03-1920.jpg 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"><img src="/public/img/black-cloud/bch-03-1920.jpg" alt="_poster series : printed campaign">
-          </picture>
-        </section>
-        <section class="m-image__wrapper" id="video-margin" onclick="change(this)"><span class="a-image__description__item">_interactive experience : desktop version 2</span>
-          <picture class="a-projectImage__item">
-            <source type="image/webp" srcset="                                /public/img/black-cloud/bch-04-1152.webp 1152w,                                /public/img/black-cloud/bch-04-1440.webp 1440w,                                /public/img/black-cloud/bch-04-1920.webp 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw">
-            <source type="image/jpg" srcset="                                /public/img/black-cloud/bch-04-1152.jpg 1152w,                                /public/img/black-cloud/bch-04-1440.jpg 1440w,                                /public/img/black-cloud/bch-04-1920.jpg 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"><img src="/public/img/black-cloud/bch-04-1920.jpg" alt="_interactive experience : desktop version 2">
-          </picture>
-        </section>
-        <section class="m-image__wrapper" onclick="change(this)"><span class="a-image__description__item">_interactive experience : desktop version 3</span>
-          <picture class="a-projectImage__item">
-            <source type="image/webp" srcset="                                /public/img/black-cloud/bch-05-1152.webp 1152w,                                /public/img/black-cloud/bch-05-1440.webp 1440w,                                /public/img/black-cloud/bch-05-1920.webp 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw">
-            <source type="image/jpg" srcset="                                /public/img/black-cloud/bch-05-1152.jpg 1152w,                                /public/img/black-cloud/bch-05-1440.jpg 1440w,                                /public/img/black-cloud/bch-05-1920.jpg 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"><img src="/public/img/black-cloud/bch-05-1920.jpg" alt="_interactive experience : desktop version 3">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-04-400.webp 1x,                                        /public/img/black-cloud/bch-04-800.webp 2x,                                        /public/img/black-cloud/bch-04-800.webp 1x,                                        /public/img/black-cloud/bch-04-1600.webp 2x," type="image/webp">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-04-400.jpg 1x,                                        /public/img/black-cloud/bch-04-800.jpg 2x,                                        /public/img/black-cloud/bch-04-800.jpg 1x,                                        /public/img/black-cloud/bch-04-1600.jpg 2x," type="image/jpg">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-04-1920.webp 1x,                                        /public/img/black-cloud/bch-04-original.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-04-1920.jpg 1x,                                        /public/img/black-cloud/bch-04-original.jpg 2x" type="image/jpg"><img src="/public/img/black-cloud/bch-04-original.jpg" alt="_interactive experience : desktop version 1">
           </picture>
         </section>
         <section class="m-image__wrapper" onclick="change(this)"><span class="a-image__description__item">_landing page : mobile version</span>
           <picture class="a-projectImage__item">
-            <source type="image/webp" srcset="                                /public/img/black-cloud/bch-06-1152.webp 1152w,                                /public/img/black-cloud/bch-06-1440.webp 1440w,                                /public/img/black-cloud/bch-06-1920.webp 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw">
-            <source type="image/jpg" srcset="                                /public/img/black-cloud/bch-06-1152.jpg 1152w,                                /public/img/black-cloud/bch-06-1440.jpg 1440w,                                /public/img/black-cloud/bch-06-1920.jpg 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"><img src="/public/img/black-cloud/bch-06-1920.jpg" alt="_landing page : mobile version">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-05-400.webp 1x,                                        /public/img/black-cloud/bch-05-800.webp 2x,                                        /public/img/black-cloud/bch-05-800.webp 1x,                                        /public/img/black-cloud/bch-05-1600.webp 2x," type="image/webp">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-05-400.jpg 1x,                                        /public/img/black-cloud/bch-05-800.jpg 2x,                                        /public/img/black-cloud/bch-05-800.jpg 1x,                                        /public/img/black-cloud/bch-05-1600.jpg 2x," type="image/jpg">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-05-1920.webp 1x,                                        /public/img/black-cloud/bch-05-original.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-05-1920.jpg 1x,                                        /public/img/black-cloud/bch-05-original.jpg 2x" type="image/jpg"><img src="/public/img/black-cloud/bch-05-original.jpg" alt="_interactive experience : desktop version 1">
           </picture>
         </section>
-        <section class="m-image__wrapper" onclick="change(this)"><span class="a-image__description__item"></span>
+        <section class="m-image__wrapper" onclick="change(this)"><span class="a-image__description__item">_landing page : mobile version</span>
           <picture class="a-projectImage__item">
-            <source type="image/webp" srcset="                                /public/img/black-cloud/bch-07-1152.webp 1152w,                                /public/img/black-cloud/bch-07-1440.webp 1440w,                                /public/img/black-cloud/bch-07-1920.webp 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw">
-            <source type="image/jpg" srcset="                                /public/img/black-cloud/bch-07-1152.jpg 1152w,                                /public/img/black-cloud/bch-07-1440.jpg 1440w,                                /public/img/black-cloud/bch-07-1920.jpg 1920w" sizes="                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"><img src="/public/img/black-cloud/bch-07-1920.jpg">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-06-400.webp 1x,                                        /public/img/black-cloud/bch-06-800.webp 2x,                                        /public/img/black-cloud/bch-06-800.webp 1x,                                        /public/img/black-cloud/bch-06-1600.webp 2x," type="image/webp">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-06-400.jpg 1x,                                        /public/img/black-cloud/bch-06-800.jpg 2x,                                        /public/img/black-cloud/bch-06-800.jpg 1x,                                        /public/img/black-cloud/bch-06-1600.jpg 2x," type="image/jpg">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-06-1920.webp 1x,                                        /public/img/black-cloud/bch-06-original.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-06-1920.jpg 1x,                                        /public/img/black-cloud/bch-06-original.jpg 2x" type="image/jpg"><img src="/public/img/black-cloud/bch-06-original.jpg" alt="_interactive experience : desktop version 1">
+          </picture>
+        </section>
+        <section class="m-image__wrapper" onclick="change(this)"><span class="a-image__description__item">_landing page : mobile version</span>
+          <picture class="a-projectImage__item">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-07-400.webp 1x,                                        /public/img/black-cloud/bch-07-800.webp 2x,                                        /public/img/black-cloud/bch-07-800.webp 1x,                                        /public/img/black-cloud/bch-07-1600.webp 2x," type="image/webp">
+            <source media="(max-width: 1023px)" srcset="/public/img/black-cloud/bch-07-400.jpg 1x,                                        /public/img/black-cloud/bch-07-800.jpg 2x,                                        /public/img/black-cloud/bch-07-800.jpg 1x,                                        /public/img/black-cloud/bch-07-1600.jpg 2x," type="image/jpg">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-07-1920.webp 1x,                                        /public/img/black-cloud/bch-07-original.webp 2x" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="/public/img/black-cloud/bch-07-1920.jpg 1x,                                        /public/img/black-cloud/bch-07-original.jpg 2x" type="image/jpg"><img src="/public/img/black-cloud/bch-07-original.jpg" alt="_interactive experience : desktop version 1">
           </picture>
         </section>
         <footer class="o-footer__container--mobile">
@@ -207,6 +221,6 @@
       </div>
     </main>
     <script src="/js/accordion.js"> </script>
-    <script src="/js/zoomOnClick.js"> </script>
+    <script src="/js/zoomOnClick.js"></script>
   </body>
 </html>

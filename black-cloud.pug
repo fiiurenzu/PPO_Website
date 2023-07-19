@@ -74,34 +74,44 @@ html(lang='en')
                             p video : opening
 
                 //- IMG BCH 01
-                section.m-image__wrapper#video-margin(onclick="change(this)")
+                section.m-image__wrapper#video-margin
                         span.a-image__description__item #{imageDetail01}
                         picture.a-projectImage__item
                             source(
-                            type="image/webp"
-                            srcset="\
-                                /public/img/black-cloud/bch-01-1152.webp 1152w,\
-                                /public/img/black-cloud/bch-01-1440.webp 1440w,\
-                                /public/img/black-cloud/bch-01-1920.webp 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-01-400.webp 1x,\
+                                        /public/img/black-cloud/bch-01-800.webp 2x,\
+                                        /public/img/black-cloud/bch-01-800.webp 1x,\
+                                        /public/img/black-cloud/bch-01-1600.webp 2x,"
+                                type="image/webp"
                             )
                             source(
-                            type="image/jpg"
-                            srcset="\
-                                /public/img/black-cloud/bch-01-1152.jpg 1152w,\
-                                /public/img/black-cloud/bch-01-1440.jpg 1440w,\
-                                /public/img/black-cloud/bch-01-1920.jpg 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-01-400.jpg 1x,\
+                                        /public/img/black-cloud/bch-01-800.jpg 2x,\
+                                        /public/img/black-cloud/bch-01-800.jpg 1x,\
+                                        /public/img/black-cloud/bch-01-1600.jpg 2x,"
+                                type="image/jpg"
                             )
-                            img(src="/public/img/black-cloud/bch-01-1920.jpg", alt=imageDetail01,)
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-01-1920.webp 1x,\
+                                        /public/img/black-cloud/bch-01-original.webp 2x"
+                                type="image/webp"
+                            )
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-01-1920.jpg 1x,\
+                                        /public/img/black-cloud/bch-01-original.jpg 2x"
+                                type="image/jpg"
+                            )
+                            img(src="/public/img/black-cloud/bch-01-original.jpg", alt=imageDetail02)
 
                 //- VIDEO BCH 02 - 03
                 section.m-video__wrapper
                     .m-video__item
                         span.a-image__description__item #{videoDetail01}
-                        video(playsinline preload="auto" autoplay muted loop="1")
+                        video#ma-video(playsinline preload="auto" autoplay muted loop="1")
                             source(src="/public/img/black-cloud/video_02.mp4" type="video/mp4")
                             source(src="/public/img/black-cloud/video_02.webm" type="video/webm")
                             p video : opening
@@ -117,25 +127,69 @@ html(lang='en')
                         span.a-image__description__item #{imageDetail02}
                         picture.a-projectImage__item
                             source(
-                            type="image/webp"
-                            srcset="\
-                                /public/img/black-cloud/bch-02-1152.webp 1152w,\
-                                /public/img/black-cloud/bch-02-1440.webp 1440w,\
-                                /public/img/black-cloud/bch-02-1920.webp 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-02-400.webp 1x,\
+                                        /public/img/black-cloud/bch-02-800.webp 2x,\
+                                        /public/img/black-cloud/bch-02-800.webp 1x,\
+                                        /public/img/black-cloud/bch-02-1600.webp 2x,"
+                                type="image/webp"
                             )
                             source(
-                            type="image/jpg"
-                            srcset="\
-                                /public/img/black-cloud/bch-02-1152.jpg 1152w,\
-                                /public/img/black-cloud/bch-02-1440.jpg 1440w,\
-                                /public/img/black-cloud/bch-02-1920.jpg 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-02-400.jpg 1x,\
+                                        /public/img/black-cloud/bch-02-800.jpg 2x,\
+                                        /public/img/black-cloud/bch-02-800.jpg 1x,\
+                                        /public/img/black-cloud/bch-02-1600.jpg 2x,"
+                                type="image/jpg"
                             )
-                            img(src="/public/img/black-cloud/bch-02-1920.jpg", alt=imageDetail02)
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-02-1920.webp 1x,\
+                                        /public/img/black-cloud/bch-02-original.webp 2x"
+                                type="image/webp"
+                            )
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-02-1920.jpg 1x,\
+                                        /public/img/black-cloud/bch-02-original.jpg 2x"
+                                type="image/jpg"
+                            )
+                            img(src="/public/img/black-cloud/bch-02-original.jpg", alt=imageDetail02)
 
+                //- IMG BCH 03
+                section.m-image__wrapper(onclick="change(this)")
+                        span.a-image__description__item #{imageDetail06}
+                        picture.a-projectImage__item
+                            source(
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-03-400.webp 1x,\
+                                        /public/img/black-cloud/bch-03-800.webp 2x,\
+                                        /public/img/black-cloud/bch-03-800.webp 1x,\
+                                        /public/img/black-cloud/bch-03-1600.webp 2x,"
+                                type="image/webp"
+                            )
+                            source(
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-03-400.jpg 1x,\
+                                        /public/img/black-cloud/bch-03-800.jpg 2x,\
+                                        /public/img/black-cloud/bch-03-800.jpg 1x,\
+                                        /public/img/black-cloud/bch-03-1600.jpg 2x,"
+                                type="image/jpg"
+                            )
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-03-1920.webp 1x,\
+                                        /public/img/black-cloud/bch-03-original.webp 2x,"
+                                type="image/webp"
+                            )
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-03-1920.jpg 1x,\
+                                        /public/img/black-cloud/bch-03-original.jpg 2x,"
+                                type="image/jpg"
+                            )
+                            img(src="/public/img/black-cloud/bch-03-original.jpg", alt=imageDetail02)
+                
                 //- VIDEO BCH 04 - 05
                 section.m-video__wrapper
                     .m-video__item
@@ -151,126 +205,141 @@ html(lang='en')
                             source(src="/public/img/black-cloud/video_05.webm" type="video/webm")
                             p video : opening
 
-                //- IMG BCH 03
-                section.m-image__wrapper#video-margin(onclick="change(this)")
-                        span.a-image__description__item #{imageDetail03}
-                        picture.a-projectImage__item
-                            source(
-                            type="image/webp"
-                            srcset="\
-                                /public/img/black-cloud/bch-03-1152.webp 1152w,\
-                                /public/img/black-cloud/bch-03-1440.webp 1440w,\
-                                /public/img/black-cloud/bch-03-1920.webp 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
-                            )
-                            source(
-                            type="image/jpg"
-                            srcset="\
-                                /public/img/black-cloud/bch-03-1152.jpg 1152w,\
-                                /public/img/black-cloud/bch-03-1440.jpg 1440w,\
-                                /public/img/black-cloud/bch-03-1920.jpg 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
-                            )
-                            img(src="/public/img/black-cloud/bch-03-1920.jpg", alt=imageDetail03)
-
                 //- IMG BCH 04
-                section.m-image__wrapper#video-margin(onclick="change(this)")
-                        span.a-image__description__item #{imageDetail04}
+                section.m-image__wrapper(onclick="change(this)")
+                        span.a-image__description__item #{imageDetail06}
                         picture.a-projectImage__item
                             source(
-                            type="image/webp"
-                            srcset="\
-                                /public/img/black-cloud/bch-04-1152.webp 1152w,\
-                                /public/img/black-cloud/bch-04-1440.webp 1440w,\
-                                /public/img/black-cloud/bch-04-1920.webp 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-04-400.webp 1x,\
+                                        /public/img/black-cloud/bch-04-800.webp 2x,\
+                                        /public/img/black-cloud/bch-04-800.webp 1x,\
+                                        /public/img/black-cloud/bch-04-1600.webp 2x,"
+                                type="image/webp"
                             )
                             source(
-                            type="image/jpg"
-                            srcset="\
-                                /public/img/black-cloud/bch-04-1152.jpg 1152w,\
-                                /public/img/black-cloud/bch-04-1440.jpg 1440w,\
-                                /public/img/black-cloud/bch-04-1920.jpg 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-04-400.jpg 1x,\
+                                        /public/img/black-cloud/bch-04-800.jpg 2x,\
+                                        /public/img/black-cloud/bch-04-800.jpg 1x,\
+                                        /public/img/black-cloud/bch-04-1600.jpg 2x,"
+                                type="image/jpg"
                             )
-                            img(src="/public/img/black-cloud/bch-04-1920.jpg", alt=imageDetail04)
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-04-1920.webp 1x,\
+                                        /public/img/black-cloud/bch-04-original.webp 2x"
+                                type="image/webp"
+                            )
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-04-1920.jpg 1x,\
+                                        /public/img/black-cloud/bch-04-original.jpg 2x"
+                                type="image/jpg"
+                            )
+                            img(src="/public/img/black-cloud/bch-04-original.jpg", alt=imageDetail02)
 
                 //- IMG BCH 05
                 section.m-image__wrapper(onclick="change(this)")
-                        span.a-image__description__item #{imageDetail05}
+                        span.a-image__description__item #{imageDetail06}
                         picture.a-projectImage__item
                             source(
-                            type="image/webp"
-                            srcset="\
-                                /public/img/black-cloud/bch-05-1152.webp 1152w,\
-                                /public/img/black-cloud/bch-05-1440.webp 1440w,\
-                                /public/img/black-cloud/bch-05-1920.webp 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-05-400.webp 1x,\
+                                        /public/img/black-cloud/bch-05-800.webp 2x,\
+                                        /public/img/black-cloud/bch-05-800.webp 1x,\
+                                        /public/img/black-cloud/bch-05-1600.webp 2x,"
+                                type="image/webp"
                             )
                             source(
-                            type="image/jpg"
-                            srcset="\
-                                /public/img/black-cloud/bch-05-1152.jpg 1152w,\
-                                /public/img/black-cloud/bch-05-1440.jpg 1440w,\
-                                /public/img/black-cloud/bch-05-1920.jpg 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-05-400.jpg 1x,\
+                                        /public/img/black-cloud/bch-05-800.jpg 2x,\
+                                        /public/img/black-cloud/bch-05-800.jpg 1x,\
+                                        /public/img/black-cloud/bch-05-1600.jpg 2x,"
+                                type="image/jpg"
                             )
-                            img(src="/public/img/black-cloud/bch-05-1920.jpg", alt=imageDetail05)
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-05-1920.webp 1x,\
+                                        /public/img/black-cloud/bch-05-original.webp 2x"
+                                type="image/webp"
+                            )
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-05-1920.jpg 1x,\
+                                        /public/img/black-cloud/bch-05-original.jpg 2x"
+                                type="image/jpg"
+                            )
+                            img(src="/public/img/black-cloud/bch-05-original.jpg", alt=imageDetail02)
 
                 //- IMG BCH 06
                 section.m-image__wrapper(onclick="change(this)")
                         span.a-image__description__item #{imageDetail06}
                         picture.a-projectImage__item
                             source(
-                            type="image/webp"
-                            srcset="\
-                                /public/img/black-cloud/bch-06-1152.webp 1152w,\
-                                /public/img/black-cloud/bch-06-1440.webp 1440w,\
-                                /public/img/black-cloud/bch-06-1920.webp 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-06-400.webp 1x,\
+                                        /public/img/black-cloud/bch-06-800.webp 2x,\
+                                        /public/img/black-cloud/bch-06-800.webp 1x,\
+                                        /public/img/black-cloud/bch-06-1600.webp 2x,"
+                                type="image/webp"
                             )
                             source(
-                            type="image/jpg"
-                            srcset="\
-                                /public/img/black-cloud/bch-06-1152.jpg 1152w,\
-                                /public/img/black-cloud/bch-06-1440.jpg 1440w,\
-                                /public/img/black-cloud/bch-06-1920.jpg 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-06-400.jpg 1x,\
+                                        /public/img/black-cloud/bch-06-800.jpg 2x,\
+                                        /public/img/black-cloud/bch-06-800.jpg 1x,\
+                                        /public/img/black-cloud/bch-06-1600.jpg 2x,"
+                                type="image/jpg"
                             )
-                            img(src="/public/img/black-cloud/bch-06-1920.jpg", alt=imageDetail06)
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-06-1920.webp 1x,\
+                                        /public/img/black-cloud/bch-06-original.webp 2x"
+                                type="image/webp"
+                            )
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-06-1920.jpg 1x,\
+                                        /public/img/black-cloud/bch-06-original.jpg 2x"
+                                type="image/jpg"
+                            )
+                            img(src="/public/img/black-cloud/bch-06-original.jpg", alt=imageDetail02)
 
                 //- IMG BCH 07
                 section.m-image__wrapper(onclick="change(this)")
-                        span.a-image__description__item #{imageDetail07}
+                        span.a-image__description__item #{imageDetail06}
                         picture.a-projectImage__item
                             source(
-                            type="image/webp"
-                            srcset="\
-                                /public/img/black-cloud/bch-07-1152.webp 1152w,\
-                                /public/img/black-cloud/bch-07-1440.webp 1440w,\
-                                /public/img/black-cloud/bch-07-1920.webp 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-07-400.webp 1x,\
+                                        /public/img/black-cloud/bch-07-800.webp 2x,\
+                                        /public/img/black-cloud/bch-07-800.webp 1x,\
+                                        /public/img/black-cloud/bch-07-1600.webp 2x,"
+                                type="image/webp"
                             )
                             source(
-                            type="image/jpg"
-                            srcset="\
-                                /public/img/black-cloud/bch-07-1152.jpg 1152w,\
-                                /public/img/black-cloud/bch-07-1440.jpg 1440w,\
-                                /public/img/black-cloud/bch-07-1920.jpg 1920w"
-                            sizes="\
-                            (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
+                                media="(max-width: 1023px)"
+                                srcset="/public/img/black-cloud/bch-07-400.jpg 1x,\
+                                        /public/img/black-cloud/bch-07-800.jpg 2x,\
+                                        /public/img/black-cloud/bch-07-800.jpg 1x,\
+                                        /public/img/black-cloud/bch-07-1600.jpg 2x,"
+                                type="image/jpg"
                             )
-                            img(src="/public/img/black-cloud/bch-07-1920.jpg", alt=imageDetail07)
-
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-07-1920.webp 1x,\
+                                        /public/img/black-cloud/bch-07-original.webp 2x"
+                                type="image/webp"
+                            )
+                            source(
+                                media="(min-width: 1024px)"
+                                srcset="/public/img/black-cloud/bch-07-1920.jpg 1x,\
+                                        /public/img/black-cloud/bch-07-original.jpg 2x"
+                                type="image/jpg"
+                            )
+                            img(src="/public/img/black-cloud/bch-07-original.jpg", alt=imageDetail02)
                 //- footer mobile
                 include includes/footer-mobile
 
