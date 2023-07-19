@@ -38,7 +38,7 @@ picture {
 }
 
 img {
-  @include media("<=desktop") {
+  @include media("<desktop") {
     width: 100vw;
   }
   @include media(">=desktop") {
@@ -50,14 +50,16 @@ video {
   object-fit: fill; // Supprime les deux bords latéraux blanc présent sur safari
 }
 .iframe {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  background-color: $first;
-}
-.iframe-portait {
-  aspect-ratio: 9 / 16;
-  width: 100%;
-  background-color: $first;
+  @include media("<desktop") {
+    aspect-ratio: 9 / 16;
+    width: 100%;
+    background-color: $first;
+  }
+  @include media(">=desktop") {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    background-color: $first;
+  }
 }
 
 //div de taille fullscreen desktop

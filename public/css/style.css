@@ -403,7 +403,7 @@ picture {
   height: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   img {
     width: 100vw;
   }
@@ -418,16 +418,19 @@ video {
   object-fit: fill;
 }
 
-.iframe {
-  aspect-ratio: 16/9;
-  width: 100%;
-  background-color: black;
+@media (max-width: 1023px) {
+  .iframe {
+    aspect-ratio: 9/16;
+    width: 100%;
+    background-color: black;
+  }
 }
-
-.iframe-portait {
-  aspect-ratio: 9/16;
-  width: 100%;
-  background-color: black;
+@media (min-width: 1024px) {
+  .iframe {
+    aspect-ratio: 16/9;
+    width: 100%;
+    background-color: black;
+  }
 }
 
 @media (min-width: 1024px) {
