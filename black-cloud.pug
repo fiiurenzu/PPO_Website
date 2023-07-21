@@ -109,13 +109,13 @@ html(lang='en')
 
                 //- VIDEO BCH 02 - 03
                 section.m-video__wrapper
-                    .m-video__item.iframe
+                    .m-video__item
                         span.a-image__description__item #{videoDetail01}
                         video(playsinline preload="auto" autoplay muted loop="1")
                             source(src="/public/img/black-cloud/video_02.webm" type="video/webm")
                             source(src="/public/img/black-cloud/video_02.mp4" type="video/mp4")
                             p video : opening
-                    .m-video__item.iframe
+                    .m-video__item
                         span.a-image__description__item #{videoDetail01}
                         video(playsinline preload="auto" autoplay muted loop="1")
                             source(src="/public/img/black-cloud/video_03.webm" type="video/webm")
@@ -192,13 +192,13 @@ html(lang='en')
                 
                 //- VIDEO BCH 04 - 05
                 section.m-video__wrapper
-                    .m-video__item.iframe
+                    .m-video__item
                         span.a-image__description__item #{videoDetail01}
                         video(playsinline preload="auto" autoplay muted loop="1")
                             source(src="/public/img/black-cloud/video_04.webm" type="video/webm")
                             source(src="/public/img/black-cloud/video_04.mp4" type="video/mp4")
                             p video : opening
-                    .m-video__item.iframe
+                    .m-video__item
                         span.a-image__description__item #{videoDetail01}
                         video(playsinline preload="auto" autoplay muted loop="1")
                             source(src="/public/img/black-cloud/video_05.webm" type="video/webm")
@@ -206,7 +206,7 @@ html(lang='en')
                             p video : opening
 
                 //- IMG BCH 04
-                section.m-image__wrapper(onclick="change(this)")
+                section.m-image__wrapper#video-margin(onclick="change(this)")
                         span.a-image__description__item #{imageDetail06}
                         picture.a-projectImage__item
                             source(

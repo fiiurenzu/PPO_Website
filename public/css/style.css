@@ -415,22 +415,7 @@ picture {
 }
 
 video {
-  object-fit: fill;
-}
-
-@media (max-width: 1023px) {
-  .iframe {
-    aspect-ratio: 9/16;
-    width: 100%;
-    background-color: black;
-  }
-}
-@media (min-width: 1024px) {
-  .iframe {
-    aspect-ratio: 16/9;
-    width: 100%;
-    background-color: black;
-  }
+  object-fit: contain;
 }
 
 @media (min-width: 1024px) {
