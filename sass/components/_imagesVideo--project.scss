@@ -49,18 +49,11 @@ img {
 video {
   object-fit: contain; // Supprime les deux bords latéraux blanc présent sur safari
 }
-// .iframe {
-//   // @include media("<desktop") {
-//   //   aspect-ratio: 9 / 16;
-//   //   width: 100%;
-//   //   background-color: $first;
-//   // }
-//   // @include media(">=desktop") {
-//   //   aspect-ratio: 16 / 9;
-//   //   width: 100%;
-//   //   background-color: $first;
-//   // }
-// }
+.iframe {
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  background-color: $first;
+}
 
 //div de taille fullscreen desktop
 .fullscreen {
