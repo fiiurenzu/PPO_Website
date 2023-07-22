@@ -1,9 +1,9 @@
 //- IMAGE DETAILS
 -let imageDetail01 = "_video announcement"
--let imageDetail02 = "_interactive experience : desktop version 1"
--let imageDetail03 = "_poster series : printed campaign"
--let imageDetail04 = "_interactive experience : desktop version 2"
--let imageDetail05 = "_interactive experience : desktop version 3"
+-let imageDetail02 = ""
+-let imageDetail03 = ""
+-let imageDetail04 = ""
+-let imageDetail05 = "_poster series : printed campaign"
 -let imageDetail06 = "_landing page : mobile version"
 
 //- PROJECT INFORMATION
@@ -63,28 +63,40 @@ html(lang='en')
             .m-pageSplit_projectLeft__wrapper
                 //- Decompressed Prism teaser
                 section.m-image__wrapper
-                    span.a-image__description__item _video : teaser
+                    span.a-image__description__item #{imageDetail01}
                     video(playsinline preload="auto" autoplay muted loop="1")
+                        source(src="/public/img/decompressed/decompressed-teaser.webm" type="video/webm")
                         source(src="/public/img/decompressed/decompressed-teaser.mp4" type="video/mp4")
-                //-DP vimeo boarding
+                        p #{imageDetail01}
+                //-DP vimeo boarding [IFRAME]
                 section.m-image__wrapper.video-margin
+                    span.a-image__d
                     iframe.iframe(src="https://player.vimeo.com/video/757482435?h=59e00c4ed3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
                     script(src="https://player.vimeo.com/api/player.js")
-                //-DP vimeo autopilot
+                    p #{imageDetail02}
+                //-DP vimeo autopilot [IFRAME]
                 section.m-image__wrapper.video-margin
+                    span.a-image__description__item 
                     iframe.iframe(src="https://player.vimeo.com/video/757214732?h=4aa2d3e65d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
                     script(src="https://player.vimeo.com/api/player.js")
-
-                //-DP vimeo autopilot
+                    p #{imageDetail03}
+                //-DP vimeo autopilot [IFRAME]
                 section.m-image__wrapper.video-margin
                     iframe.iframe(src="https://player.vimeo.com/video/757482628?h=098256aa7c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen)
                     script(src="https://player.vimeo.com/api/player.js")
-
+                    p #{imageDetail04}
                 //- Decompressed Prism poster motion
                 section.m-image__wrapper.video-margin
-                    span.a-image__description__item _motion : poster 
+                    span.a-image__description__item #{imageDetail05} 
                     video.iframe(playsinline preload="auto" width="100%" height="auto" autoplay muted loop="1")
                         source(src="/public/img/decompressed/decompressed-poster-motion.mp4" type="video/mp4")
+                //- DP Mobile version
+                section.m-image__wrapper.video-margin
+                    span.a-image__description__item #{imageDetail06}
+                    video.iframe(playsinline preload="auto" autoplay muted loop="1")
+                        source(src="/public/img/decompressed/decompressed-mobile.mp4" type="video/mp4")
+                        source(src="/public/img/decompressed/decompressed-mobile.webm" type="video/webm")
+                        p #{imageDetail06}
                         
                 //- footer mobile
                 include includes/footer-mobile
@@ -94,7 +106,7 @@ html(lang='en')
                 //- Information : client title area description
                 //- Client
                 section.m-container_grid_client
-                    div.a-project_info__item Client.
+                    div.a-project_info__item Client
                     h1.a-project_info__item #{clientName}
                     a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
 
@@ -102,14 +114,14 @@ html(lang='en')
                 section.m-container_grid_description#returnTop
                     div.a-project_info__item Descr.
                     div.a-project_info__item #{catName}
-                    div.a-project_info__item Area.
+                    div.a-project_info__item Area
                     div.a-project_info__item #{localisationProject}
                     div.a-project_info__item.flagCH 
                     div.a-project_info__item 
 
                 //- Title projet
                 section.m-container_grid_label
-                    div.a-project_info__item Label.
+                    div.a-project_info__item Label
                     div.a-project_info__item #{labelProject}
 
                 
