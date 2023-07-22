@@ -1,10 +1,12 @@
 //- IMAGE DETAILS
--let imageDetail01 = "_video announcement"
--let imageDetail02 = "_interactive experience : desktop version 1"
--let imageDetail03 = "_poster series : printed campaign"
--let imageDetail04 = "_interactive experience : desktop version 2"
--let imageDetail05 = "_interactive experience : desktop version 3"
--let imageDetail06 = "_landing page : mobile version"
+-let imageDetail01 = "_exhibition view: in-game, touchscreen monitor 1"
+-let imageDetail02 = "_exhibition view: in-game, touchscreen monitor 2"
+-let imageDetail03 = "_exhibition view: BSOD, touchscreen monitor 1 & 2"
+-let imageDetail04 = "_exhibition view: start screen, touchsreen monitor 1"
+-let imageDetail05 = "_exhibition view: full installation view 1"
+-let imageDetail06 = "_exhibition view: full installation view 2"
+-let imageDetail07 = "_exhibition view: full installation view 3"
+
 
 //- IMAGE DETAILS
 -let videoDetail01 = "_video opening"
@@ -157,8 +159,8 @@ html(lang='en')
                             img(src="/public/img/black-cloud/bch-02-original.jpg", alt=imageDetail02)
 
                 //- IMG BCH 03
-                section.m-image__wrapper(onclick="change(this)")
-                        span.a-image__description__item #{imageDetail06}
+                section.m-image__wrapper
+                        span.a-image__description__item #{imageDetail03}
                         picture.a-projectImage__item
                             source(
                                 media="(max-width: 1023px)"
@@ -206,8 +208,8 @@ html(lang='en')
                             p video : opening
 
                 //- IMG BCH 04
-                section.m-image__wrapper#video-margin(onclick="change(this)")
-                        span.a-image__description__item #{imageDetail06}
+                section.m-image__wrapper#video-margin
+                        span.a-image__description__item #{imageDetail04}
                         picture.a-projectImage__item
                             source(
                                 media="(max-width: 1023px)"
@@ -241,7 +243,7 @@ html(lang='en')
 
                 //- IMG BCH 05
                 section.m-image__wrapper(onclick="change(this)")
-                        span.a-image__description__item #{imageDetail06}
+                        span.a-image__description__item #{imageDetail05}
                         picture.a-projectImage__item
                             source(
                                 media="(max-width: 1023px)"
@@ -274,7 +276,7 @@ html(lang='en')
                             img(src="/public/img/black-cloud/bch-05-original.jpg", alt=imageDetail02)
 
                 //- IMG BCH 06
-                section.m-image__wrapper(onclick="change(this)")
+                section.m-image__wrapper
                         span.a-image__description__item #{imageDetail06}
                         picture.a-projectImage__item
                             source(
@@ -308,8 +310,8 @@ html(lang='en')
                             img(src="/public/img/black-cloud/bch-06-original.jpg", alt=imageDetail02)
 
                 //- IMG BCH 07
-                section.m-image__wrapper(onclick="change(this)")
-                        span.a-image__description__item #{imageDetail06}
+                section.m-image__wrapper
+                        span.a-image__description__item #{imageDetail07}
                         picture.a-projectImage__item
                             source(
                                 media="(max-width: 1023px)"
