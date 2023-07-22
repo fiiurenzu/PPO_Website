@@ -1,10 +1,16 @@
 //- IMAGE DETAILS
--let imageDetail01 = "_video announcement"
--let imageDetail02 = "_interactive experience : desktop version 1"
--let imageDetail03 = "_poster series : printed campaign"
--let imageDetail04 = "_interactive experience : desktop version 2"
--let imageDetail05 = "_interactive experience : desktop version 3"
--let imageDetail06 = "_landing page : mobile version"
+-let imageDetail00 = "_poster : 120×176"
+-let imageDetail01 = "_booklet : cover, full view"
+-let imageDetail02 = "_booklet : two-page spread 01"
+-let imageDetail03 = "_booklet : two-page spread 01"
+-let imageDetail04 = "_booklet : two-page spread detail"
+-let imageDetail05 = "_booklet : two-page spread 02"
+-let imageDetail06 = "_booklet : two-page spread 03"
+-let imageDetail07 = "_booklet : two-page spread detail"
+-let imageDetail08 = "_booklet : two-page spread 04"
+-let imageDetail09 = "_booklet : two-page spread 05"
+-let imageDetail10 = "_booklet : two-page spread 06"
+-let imageDetail11 = "_booklet : two-page spread 07"
 
 //- PROJECT INFORMATION
 -let clientName = "Espace Loisir Culture"
@@ -58,7 +64,7 @@ html(lang='en')
             .m-pageSplit_projectLeft__wrapper
                 //- IMG ELC poster
                 section.m-image__wrapper
-                        span.a-image__description__item #{imageDetail01}
+                        span.a-image__description__item #{imageDetail00}
                         picture.a-projectImage__item
                             source(
                             type="image/webp"
@@ -78,7 +84,7 @@ html(lang='en')
                             sizes="\
                             (min-width: 1024px) 50vw, (max-width:1023px) 100vw"
                             )
-                            img(src="/public/img/elc/elc-poster-1920.jpg", alt=imageDetail01)
+                            img(src="/public/img/elc/elc-poster-1920.jpg", alt=imageDetail00)
                 //- IMG ELC 01
                 section.m-image__wrapper
                         span.a-image__description__item #{imageDetail01}
@@ -341,7 +347,7 @@ html(lang='en')
                 //- Information : client title area description
                 //- Client
                 section.m-container_grid_client
-                    div.a-project_info__item Client.
+                    div.a-project_info__item Client
                     h1.a-project_info__item#desktop #{clientName}
                     h1.a-project_info__item#mobile #{clientNameMobile}
                     a._slideHover.material-icons#returnHome(href="/index.html") drive_file_move_rtl
@@ -350,14 +356,14 @@ html(lang='en')
                 section.m-container_grid_description#returnTop
                     div.a-project_info__item Descr.
                     div.a-project_info__item #{catName}
-                    div.a-project_info__item Area.
+                    div.a-project_info__item Area
                     div.a-project_info__item #{localisationProject}
                     div.a-project_info__item.flagFR 
                     div.a-project_info__item
 
                 //- Title projet
                 section.m-container_grid_label
-                    div.a-project_info__item Label.
+                    div.a-project_info__item Label
                     div.a-project_info__item #{labelProject}
 
                 
@@ -376,8 +382,8 @@ html(lang='en')
 
                     //- TEXTE CONTENU\
                     .m-text_project__wrapper
-                        p.a-text_project__itemVisual The Espace Loisir Culture is an association founded in 1966 and located in Montmirail. A multi-disciplinary place of creation and production, the ELC associates live performance, dance, music cinema and linguistic and sports activities. The association addresses itself to the largest public, so that its activities are a popular tool of individual and collective elevation. It is a true place of artistic gathering, of cultural bubbling and of conviviality that mixes genres, and audiences, the association offers about fifty cultural and sports activities. The ELC also presents a cultural program. Conferences, festivals, productions of plays, dance shows and presentations are organized each season from September to June. The association is administered by a board of directors and is run by a team of by a team of 80 volunteers. It is recognized as being of general interest.
                         p.a-text_project__itemVisual 2022/2023 Season program booklet & poster designed for Espace Loisir Culture, a non-profit organisation of the Grand-Est region in France.
+                        p.a-text_project__itemVisual The Espace Loisir Culture is an association founded in 1966 and located in Montmirail. A multi-disciplinary place of creation and production, the ELC associates live performance, dance, music cinema and linguistic and sports activities. The association addresses itself to the largest public, so that its activities are a popular tool of individual and collective elevation. It is a true place of artistic gathering, of cultural bubbling and of conviviality that mixes genres, and audiences, the association offers about fifty cultural and sports activities. The ELC also presents a cultural program. Conferences, festivals, productions of plays, dance shows and presentations are organized each season from September to June. The association is administered by a board of directors and is run by a team of by a team of 80 volunteers. It is recognized as being of general interest.
 
                     //- External Website
                     .scrollmenu.scroll_horizontal
