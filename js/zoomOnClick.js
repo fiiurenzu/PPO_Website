@@ -1,8 +1,6 @@
-let mediaDesktop = window.matchMedia("(min-width:1024px)");
+//function change(element) {
+//element.classList.toggle("m-image__wrapper");
+//element.classList.toggle("m-image__wrapper__fullscreen");
+//}
 
-if (mediaDesktop.matches) {
-  function change(element) {
-    element.classList.toggle("m-image__wrapper");
-    element.classList.toggle("fullscreen");
-  }
-}
+//Ajouter ca au html > section.m-image__wrapper#video-margin(onclick="change(this)")
