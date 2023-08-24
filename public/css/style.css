@@ -367,6 +367,18 @@ button {
   position: relative;
   width: 100%;
   height: auto;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='%23050505' viewBox='0 0 256 256'%3E%3Cpath d='M192,112a80,80,0,1,1-80-80A80,80,0,0,1,192,112Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M229.66,218.34,179.6,168.28a88.21,88.21,0,1,0-11.32,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Zm112,0a8,8,0,0,1-8,8H120v24a8,8,0,0,1-16,0V120H80a8,8,0,0,1,0-16h24V80a8,8,0,0,1,16,0v24h24A8,8,0,0,1,152,112Z'%3E%3C/path%3E%3C/svg%3E") 10 10, zoom-in;
+}
+
+.m-image__wrapper__fullscreen {
+  display: block;
+  width: 100vw;
+  height: auto;
+  z-index: 9999;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
 }
 
 .m-video__wrapper {
@@ -401,17 +413,6 @@ button {
 picture {
   width: 100%;
   height: 100%;
-}
-
-@media (max-width: 1023px) {
-  img {
-    width: 100vw;
-  }
-}
-@media (min-width: 1024px) {
-  img {
-    width: 50vw;
-  }
 }
 
 video {
@@ -995,7 +996,7 @@ html {
 .flagUK {
   margin: 5px 10px;
   background-size: contain;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/langfr-225px-Flag_of_the_United_Kingdom_%283-5%29.svg.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg");
   object-fit: contain;
   background-repeat: no-repeat;
 }
@@ -1003,7 +1004,7 @@ html {
 .flagFR {
   margin: 5px 10px;
   background-size: contain;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/langfr-1920px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg");
   object-fit: contain;
   background-repeat: no-repeat;
 }
@@ -1011,7 +1012,7 @@ html {
 .flagCH {
   margin: 5px 10px;
   background-size: contain;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/langfr-1280px-Flag_of_Switzerland_%28Pantone%29.svg.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f2/Civil_Ensign_of_Switzerland.svg");
   object-fit: contain;
   background-repeat: no-repeat;
 }
@@ -1027,7 +1028,7 @@ html {
 .flagBR {
   margin: 5px 10px;
   background-size: contain;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Gwenn_ha_Du_%2811_mouchetures%29.svg/langfr-1920px-Gwenn_ha_Du_%2811_mouchetures%29.svg.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/21/Drapeau_de_la_Bretagne_-_Gwenn_Ha_Du.svg");
   object-fit: contain;
   background-repeat: no-repeat;
 }
@@ -1035,7 +1036,7 @@ html {
 .flagUS {
   margin: 5px 10px;
   background-size: contain;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/langfr-1920px-Flag_of_the_United_States.svg.png");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_the_United_States_%281777%E2%80%931795%29.svg");
   object-fit: contain;
   background-repeat: no-repeat;
 }
