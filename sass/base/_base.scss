@@ -10,7 +10,6 @@
  * ------------------------------------------------------------------------- */
 html {
   scroll-behavior: smooth;
-  cursor: crosshair;
 }
 
 /**
@@ -130,21 +129,6 @@ table {
 ol,
 ul {
   list-style: none;
-}
-
-img,
-video {
-  max-width: 100%;
-}
-
-img {
-  border-style: none;
-  box-sizing: border-box;
-  display: block;
-}
-
-video {
-  border: none;
 }
 
 button {

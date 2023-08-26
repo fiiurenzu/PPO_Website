@@ -40,7 +40,6 @@
  * ------------------------------------------------------------------------- */
 html {
   scroll-behavior: smooth;
-  cursor: crosshair;
 }
 
 /**
@@ -159,21 +158,6 @@ table {
 ol,
 ul {
   list-style: none;
-}
-
-img,
-video {
-  max-width: 100%;
-}
-
-img {
-  border-style: none;
-  box-sizing: border-box;
-  display: block;
-}
-
-video {
-  border: none;
 }
 
 button {
@@ -367,18 +351,7 @@ button {
   position: relative;
   width: 100%;
   height: auto;
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' fill='%23050505' viewBox='0 0 256 256'%3E%3Cpath d='M192,112a80,80,0,1,1-80-80A80,80,0,0,1,192,112Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M229.66,218.34,179.6,168.28a88.21,88.21,0,1,0-11.32,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Zm112,0a8,8,0,0,1-8,8H120v24a8,8,0,0,1-16,0V120H80a8,8,0,0,1,0-16h24V80a8,8,0,0,1,16,0v24h24A8,8,0,0,1,152,112Z'%3E%3C/path%3E%3C/svg%3E") 10 10, zoom-in;
-}
-
-.m-image__wrapper__fullscreen {
-  display: block;
-  width: 100vw;
-  height: auto;
-  z-index: 9999;
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
+  cursor: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 27.8.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Calque_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='25' height='25' viewBox='0 0 28 28' style='enable-background:new 0 0 28 28;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%230E1111;%7D .st1%7Bfill-rule:evenodd;clip-rule:evenodd;fill:%230E1111;%7D .st2%7Bfill-rule:evenodd;clip-rule:evenodd;fill:%23FCFCFC;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='19,13.2 19,14.8 14.8,14.8 14.8,19 13.2,19 13.2,14.8 9,14.8 9,13.2 13.2,13.2 13.2,9 14.8,9 14.8,13.2 '/%3E%3Cpath class='st1' d='M14,3.2C8.1,3.2,3.2,8.1,3.2,14S8.1,24.8,14,24.8S24.8,19.9,24.8,14S19.9,3.2,14,3.2z M14,23.2 c-5.1,0-9.2-4.1-9.2-9.2S8.9,4.8,14,4.8s9.2,4.1,9.2,9.2S19.1,23.2,14,23.2z'/%3E%3Cpath class='st2' d='M14,4.8c-5.1,0-9.2,4.1-9.2,9.2s4.1,9.2,9.2,9.2s9.2-4.1,9.2-9.2S19.1,4.8,14,4.8z M19,14.8h-4.2V19h-1.5v-4.2 H9v-1.5h4.2V9h1.5v4.2H19V14.8z'/%3E%3C/svg%3E%0A") 10 10, zoom-in;
 }
 
 .m-video__wrapper {
@@ -386,6 +359,7 @@ button {
   width: 100%;
   height: auto;
   display: flex;
+  object-fit: contain;
 }
 
 #video-margin {
@@ -410,34 +384,33 @@ button {
   opacity: 1;
 }
 
-picture {
-  width: 100%;
-  height: 100%;
+@media (min-width: 1024px) {
+  picture {
+    width: 50%;
+  }
+}
+
+img {
+  border-style: none;
+  box-sizing: border-box;
+  display: block;
+}
+@media (min-width: 1024px) {
+  img {
+    max-width: 100%;
+  }
 }
 
 video {
+  border: none;
   object-fit: contain;
+  max-width: 100%;
 }
 
 .iframe {
   aspect-ratio: 16/9;
   width: 100%;
   background-color: black;
-}
-
-@media (min-width: 1024px) {
-  .fullscreen {
-    border-color: black;
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    object-fit: cover;
-    cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAMCAYAAABr5z2BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIJJREFUeNpiYGBg+I8Hf0KisQJGqAJiACM2QRZCCoix4D8JrgCBhUAciM0L6C7gAuIYIH4KxD+g8nJAPBcqrwPEV/G5QIFAAIOwIxMBrxECXPi8wAHEHkD8BIh/QtWBvLAVKm8GxKfJCcSpQOxLSizglWch0c8YgImA/Gc0GgMABBgAaiQu/TORGycAAAAASUVORK5CYII=), pointer;
-  }
 }
 
 /**

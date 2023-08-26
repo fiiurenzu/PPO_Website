@@ -158,7 +158,7 @@ var Intense = (function () {
     applyProperties(container, containerProperties);
 
     var imageProperties = {
-      cursor: 'url( "public/icons/x-square.svg" ) 25 25, auto',
+      cursor: `url( "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 27.8.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Calque_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='25' height='25' viewBox='0 0 28 28' style='enable-background:new 0 0 28 28;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%230E1111;%7D .st1%7Bfill-rule:evenodd;clip-rule:evenodd;fill:%230E1111;%7D .st2%7Bfill-rule:evenodd;clip-rule:evenodd;fill:%23FFFFFF;%7D%0A%3C/style%3E%3Crect x='9' y='13.2' class='st0' width='10' height='1.5'/%3E%3Cpath class='st1' d='M14,3.2C8.1,3.2,3.2,8.1,3.2,14S8.1,24.8,14,24.8S24.8,19.9,24.8,14S19.9,3.2,14,3.2z M14,23.2 c-5.1,0-9.2-4.1-9.2-9.2S8.9,4.8,14,4.8s9.2,4.1,9.2,9.2S19.1,23.2,14,23.2z'/%3E%3Cpath class='st2' d='M14,4.8c-5.1,0-9.2,4.1-9.2,9.2s4.1,9.2,9.2,9.2s9.2-4.1,9.2-9.2S19.1,4.8,14,4.8z M19,14.8H9v-1.5h10V14.8z'/%3E%3C/svg%3E%0A" ) 25 25, auto`,
     };
     applyProperties(target, imageProperties);
 
